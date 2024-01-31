@@ -1,0 +1,15 @@
+[[1;34mINFO[m] Scanning for projects...
+[[1;31mERROR[m] [ERROR] Some problems were encountered while processing the POMs:
+[ERROR] Malformed POM /home/developer/Microservices/ServiceRegistry/demo/pom.xml: Unrecognised tag: 'dependencies' (position: START_TAG seen ...</dependency>\n       <dependencies>... @29:22)  @ /home/developer/Microservices/ServiceRegistry/demo/pom.xml, line 29, column 22
+ @ 
+[[1;31mERROR[m] The build could not read 1 project -> [1m[Help 1][m
+[[1;31mERROR[m]   
+[[1;31mERROR[m]   The project com.serviceragistry:demo:0.0.1-SNAPSHOT (/home/developer/Microservices/ServiceRegistry/demo/pom.xml) has 1 error
+[[1;31mERROR[m]     Malformed POM /home/developer/Microservices/ServiceRegistry/demo/pom.xml: Unrecognised tag: 'dependencies' (position: START_TAG seen ...</dependency>\n       <dependencies>... @29:22)  @ /home/developer/Microservices/ServiceRegistry/demo/pom.xml, line 29, column 22 -> [1m[Help 2][m
+[[1;31mERROR[m] 
+[[1;31mERROR[m] To see the full stack trace of the errors, re-run Maven with the [1m-e[m switch.
+[[1;31mERROR[m] Re-run Maven using the [1m-X[m switch to enable full debug logging.
+[[1;31mERROR[m] 
+[[1;31mERROR[m] For more information about the errors and possible solutions, please read the following articles:
+[[1;31mERROR[m] [1m[Help 1][m http://cwiki.apache.org/confluence/display/MAVEN/ProjectBuildingException
+[[1;31mERROR[m] [1m[Help 2][m http://cwiki.apache.org/confluence/display/MAVEN/ModelParseException
