@@ -4,7 +4,7 @@
 cd CnfigServer/demo/ || exit
 echo "Building Config Server..."
 mvn spring-boot:run  > Config-Server.log 2>&1 &
-MS6_PID=$!
+MS1_PID=$!
 
 # Navigate back to the original directory
 cd ../../
@@ -12,7 +12,7 @@ cd ../../
 cd Rating/demo/ || exit
 echo "Building Ratings..."
 mvn spring-boot:run  > microservice1.log 2>&1 &
-MS1_PID=$!
+MS2_PID=$!
 
 # Navigate back to the original directory
 cd ../../
@@ -21,7 +21,7 @@ cd ../../
 cd Hotel/demo/ || exit
 echo "Building Hotel..."
 mvn spring-boot:run  > microservice2.log 2>&1 &
-MS2_PID=$!
+MS3_PID=$!
 
 # Navigate back to the original directory
 cd ../../
@@ -30,7 +30,7 @@ cd ../../
 cd User/demo/ || exit
 echo "Building User..."
 mvn spring-boot:run  > microservice3.log 2>&1 &
-MS3_PID=$!
+MS4_PID=$!
 
 # Navigate back to the original directory
 cd ../../
@@ -48,7 +48,7 @@ cd ../../
 cd ServiceRegistry/demo/ || exit
 echo "Building Service Ragistry..."
 mvn spring-boot:run  > Service_Ragistry.log 2>&1 &
-MS7_PID=$!
+MS6_PID=$!
 
 # Navigate back to the original directory
 cd ../../

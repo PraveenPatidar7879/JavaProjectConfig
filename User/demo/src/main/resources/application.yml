@@ -16,3 +16,52 @@ spring:
    config:
      import: configserver:http://localhost:8085
 
+management:
+   health:
+     circuitbreakers:
+         enable: true
+   endpoints:
+      web:
+       exposure:
+         include: health
+   endpoint: 
+      health:
+        show-details: always
+
+resilience4j:
+    circuitbreakers:
+       instance:
+         ratingHotelBreaker:
+            registerHealthIndicator: true
+            evenConsumerBufferSize: 10
+            failureRateThreshold: 50
+            minimumNumberOfCalls: 5
+            automaticTransitionFromOpenToHalfOpenEnabled: true
+            waitDurationInOpenState: 6s
+            permittedNumberOfCallsInHalfOpenState: 3
+            SlidingWindowSize: 10
+            SlidingWindowType: COUNT_BASED
+
+retry:  
+  instance:
+     rotingHotelService:
+        max-attempt: 3
+        wait-duration: 5s
+
+
+ratelimiter:
+    instance:
+       userRateLimiter:
+          limit-refresh-period: 4s
+          limit-for-period: 2
+          timeout-duration: 0s
+
+   
+
+
+
+   
+
+          
+
+

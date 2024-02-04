@@ -22,17 +22,18 @@
 [[1;34mINFO[m] Nothing to compile - all classes are up to date
 [[1;34mINFO[m] 
 [[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:3.3.0:testResources[m [1m(default-testResources)[m @ [36mdemo[0;1m ---[m
-[[1;34mINFO[m] skip non existing resourceDirectory /home/developer/Microservices/Hotel/demo/src/test/resources
+[[1;34mINFO[m] skip non existing resourceDirectory /home/developer/Microservices/JavaProjectConfig/Hotel/demo/src/test/resources
 [[1;34mINFO[m] 
 [[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.10.1:testCompile[m [1m(default-testCompile)[m @ [36mdemo[0;1m ---[m
-[[1;34mINFO[m] Nothing to compile - all classes are up to date
+[[1;34mINFO[m] Changes detected - recompiling the module!
+[[1;34mINFO[m] Compiling 1 source file to /home/developer/Microservices/JavaProjectConfig/Hotel/demo/target/test-classes
 [[1;34mINFO[m] 
 [[1;34mINFO[m] [1m<<< [0;32mspring-boot-maven-plugin:3.0.1:run[m [1m(default-cli)[0;1m < [0;1mtest-compile[m @ [36mdemo[0;1m <<<[m
 [[1;34mINFO[m] 
 [[1;34mINFO[m] 
 [[1;34mINFO[m] [1m--- [0;32mspring-boot-maven-plugin:3.0.1:run[m [1m(default-cli)[m @ [36mdemo[0;1m ---[m
 [[1;34mINFO[m] Attaching agents: []
-19:50:00.306 [main] ERROR org.springframework.boot.SpringApplication - Application run failed
+11:54:47.544 [main] ERROR org.springframework.boot.SpringApplication - Application run failed
 org.springframework.cloud.config.client.ConfigClientFailFastException: Could not locate PropertySource and the resource is not optional, failing
 	at org.springframework.cloud.config.client.ConfigServerConfigDataLoader.doLoad(ConfigServerConfigDataLoader.java:201)
 	at org.springframework.cloud.config.client.ConfigServerConfigDataLoader.load(ConfigServerConfigDataLoader.java:102)
@@ -95,8 +96,8 @@ Caused by: java.net.ConnectException: Connection refused
 [[1;34mINFO[m] [1m------------------------------------------------------------------------[m
 [[1;34mINFO[m] [1;31mBUILD FAILURE[m
 [[1;34mINFO[m] [1m------------------------------------------------------------------------[m
-[[1;34mINFO[m] Total time:  10.237 s
-[[1;34mINFO[m] Finished at: 2024-01-30T19:50:00+05:30
+[[1;34mINFO[m] Total time:  13.235 s
+[[1;34mINFO[m] Finished at: 2024-02-04T11:54:47+05:30
 [[1;34mINFO[m] [1m------------------------------------------------------------------------[m
 [[1;31mERROR[m] Failed to execute goal [32morg.springframework.boot:spring-boot-maven-plugin:3.0.1:run[m [1m(default-cli)[m on project [36mdemo[m: [1;31mProcess terminated with exit code: 1[m -> [1m[Help 1][m
 [[1;31mERROR[m] 
