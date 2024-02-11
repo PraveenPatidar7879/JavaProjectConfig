@@ -32,7 +32,7 @@
 [[1;34mINFO[m] 
 [[1;34mINFO[m] [1m--- [0;32mspring-boot-maven-plugin:3.0.1:run[m [1m(default-cli)[m @ [36mdemo[0;1m ---[m
 [[1;34mINFO[m] Attaching agents: []
-11:54:45.585 [main] ERROR org.springframework.boot.SpringApplication - Application run failed
+22:12:00.037 [main] ERROR org.springframework.boot.SpringApplication - Application run failed
 org.springframework.cloud.config.client.ConfigClientFailFastException: Could not locate PropertySource and the resource is not optional, failing
 	at org.springframework.cloud.config.client.ConfigServerConfigDataLoader.doLoad(ConfigServerConfigDataLoader.java:201)
 	at org.springframework.cloud.config.client.ConfigServerConfigDataLoader.load(ConfigServerConfigDataLoader.java:102)
@@ -95,8 +95,8 @@ Caused by: java.net.ConnectException: Connection refused
 [[1;34mINFO[m] [1m------------------------------------------------------------------------[m
 [[1;34mINFO[m] [1;31mBUILD FAILURE[m
 [[1;34mINFO[m] [1m------------------------------------------------------------------------[m
-[[1;34mINFO[m] Total time:  11.031 s
-[[1;34mINFO[m] Finished at: 2024-02-04T11:54:45+05:30
+[[1;34mINFO[m] Total time:  8.455 s
+[[1;34mINFO[m] Finished at: 2024-02-05T22:12:00+05:30
 [[1;34mINFO[m] [1m------------------------------------------------------------------------[m
 [[1;31mERROR[m] Failed to execute goal [32morg.springframework.boot:spring-boot-maven-plugin:3.0.1:run[m [1m(default-cli)[m on project [36mdemo[m: [1;31mProcess terminated with exit code: 1[m -> [1m[Help 1][m
 [[1;31mERROR[m] 

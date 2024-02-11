@@ -4,7 +4,8 @@
 [[1;34mINFO[m] [1mBuilding demo 0.0.1-SNAPSHOT[m
 [[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
 [[1;34mINFO[m] 
-[[1;34mINFO[m] [1m>>> [0;32mspring-boot-maven-plugin:2.7.6:run[m [1m(default-cli)[0;1m > [0;1mtest-compile[m @ [36mdemo[0;1m >>>[m
+[[1;34mINFO[m] [1m--- [0;32mmaven-clean-plugin:3.2.0:clean[m [1m(default-clean)[m @ [36mdemo[0;1m ---[m
+[[1;34mINFO[m] Deleting /home/developer/Microservices/JavaProjectConfig/Apigetway/demo/target
 [[1;34mINFO[m] 
 [[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:3.2.0:resources[m [1m(default-resources)[m @ [36mdemo[0;1m ---[m
 [[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
@@ -13,7 +14,8 @@
 [[1;34mINFO[m] Copying 0 resource
 [[1;34mINFO[m] 
 [[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.10.1:compile[m [1m(default-compile)[m @ [36mdemo[0;1m ---[m
-[[1;34mINFO[m] Nothing to compile - all classes are up to date
+[[1;34mINFO[m] Changes detected - recompiling the module!
+[[1;34mINFO[m] Compiling 5 source files to /home/developer/Microservices/JavaProjectConfig/Apigetway/demo/target/classes
 [[1;34mINFO[m] 
 [[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:3.2.0:testResources[m [1m(default-testResources)[m @ [36mdemo[0;1m ---[m
 [[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
@@ -24,12 +26,31 @@
 [[1;34mINFO[m] Changes detected - recompiling the module!
 [[1;34mINFO[m] Compiling 1 source file to /home/developer/Microservices/JavaProjectConfig/Apigetway/demo/target/test-classes
 [[1;34mINFO[m] 
-[[1;34mINFO[m] [1m<<< [0;32mspring-boot-maven-plugin:2.7.6:run[m [1m(default-cli)[0;1m < [0;1mtest-compile[m @ [36mdemo[0;1m <<<[m
+[[1;34mINFO[m] [1m--- [0;32mmaven-surefire-plugin:2.22.2:test[m [1m(default-test)[m @ [36mdemo[0;1m ---[m
 [[1;34mINFO[m] 
-[[1;34mINFO[m] 
-[[1;34mINFO[m] [1m--- [0;32mspring-boot-maven-plugin:2.7.6:run[m [1m(default-cli)[m @ [36mdemo[0;1m ---[m
-[[1;34mINFO[m] Attaching agents: []
-11:54:46.756 [Thread-0] DEBUG org.springframework.boot.devtools.restart.classloader.RestartClassLoader - Created RestartClassLoader org.springframework.boot.devtools.restart.classloader.RestartClassLoader@5d73af2f
+[[1;34mINFO[m] -------------------------------------------------------
+[[1;34mINFO[m]  T E S T S
+[[1;34mINFO[m] -------------------------------------------------------
+[[1;34mINFO[m] Running com.apigateway.demo.[1mDemoApplicationTests[m
+16:21:25.099 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+16:21:25.146 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+16:21:25.323 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [com.apigateway.demo.DemoApplicationTests] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
+16:21:25.388 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.apigateway.demo.DemoApplicationTests], using SpringBootContextLoader
+16:21:25.393 [main] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.apigateway.demo.DemoApplicationTests]: class path resource [com/apigateway/demo/DemoApplicationTests-context.xml] does not exist
+16:21:25.394 [main] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.apigateway.demo.DemoApplicationTests]: class path resource [com/apigateway/demo/DemoApplicationTestsContext.groovy] does not exist
+16:21:25.394 [main] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.apigateway.demo.DemoApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+16:21:25.403 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.apigateway.demo.DemoApplicationTests]: DemoApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+16:21:25.657 [main] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [com.apigateway.demo.DemoApplicationTests]
+16:21:25.973 [main] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [/home/developer/Microservices/JavaProjectConfig/Apigetway/demo/target/classes/com/apigateway/demo/DemoApplication.class]
+16:21:25.973 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.apigateway.demo.DemoApplication for test class com.apigateway.demo.DemoApplicationTests
+16:21:26.501 [main] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - @TestExecutionListeners is not present for class [com.apigateway.demo.DemoApplicationTests]: using defaults.
+16:21:26.503 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener, org.springframework.security.test.context.support.ReactorContextTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener]
+16:21:26.543 [main] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Skipping candidate TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener] due to a missing dependency. Specify custom listener classes or make the default listener classes and their required dependencies available. Offending class: [javax/servlet/ServletContext]
+16:21:26.545 [main] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Skipping candidate TestExecutionListener [org.springframework.test.context.transaction.TransactionalTestExecutionListener] due to a missing dependency. Specify custom listener classes or make the default listener classes and their required dependencies available. Offending class: [org/springframework/transaction/interceptor/TransactionAttributeSource]
+16:21:26.545 [main] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Skipping candidate TestExecutionListener [org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener] due to a missing dependency. Specify custom listener classes or make the default listener classes and their required dependencies available. Offending class: [org/springframework/transaction/interceptor/TransactionAttribute]
+16:21:26.571 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@61fe30, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@c9d0d6, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@6ccdb29f, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@3adcc812, org.springframework.test.context.support.DirtiesContextTestExecutionListener@35432107, org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener@7b420819, org.springframework.test.context.event.EventPublishingTestExecutionListener@7a1a14a4, org.springframework.security.test.context.support.ReactorContextTestExecutionListener@265adfad, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@a3d9978, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@61544ae6, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@4b41dd5c, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@3b96c42e, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@5d066c7d, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@1e461e41]
+16:21:26.574 [main] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@64bce832 testClass = DemoApplicationTests, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [ReactiveWebMergedContextConfiguration@764faa6 testClass = DemoApplicationTests, locations = '{}', classes = '{class com.apigateway.demo.DemoApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@212b5695, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@37654521, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@4a7f959b, org.springframework.boot.test.web.reactive.server.WebTestClientContextCustomizer@1b1426f4, org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@67c33749, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@20ccf40b, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@704a52ec], contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map[[empty]]], class annotated with @DirtiesContext [false] with mode [null].
+16:21:26.612 [main] DEBUG org.springframework.test.context.support.DependencyInjectionTestExecutionListener - Performing dependency injection for test context [[DefaultTestContext@64bce832 testClass = DemoApplicationTests, testInstance = com.apigateway.demo.DemoApplicationTests@4426bff1, testMethod = [null], testException = [null], mergedContextConfiguration = [ReactiveWebMergedContextConfiguration@764faa6 testClass = DemoApplicationTests, locations = '{}', classes = '{class com.apigateway.demo.DemoApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@212b5695, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@37654521, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@4a7f959b, org.springframework.boot.test.web.reactive.server.WebTestClientContextCustomizer@1b1426f4, org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@67c33749, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@20ccf40b, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@704a52ec], contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.event.ApplicationEventsTestExecutionListener.recordApplicationEvents' -> false]]].
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -37,44 +58,55 @@
  \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
   '  |____| .__|_| |_|_| |_\__, | / / / /
  =========|_|==============|___/=/_/_/_/
- :: Spring Boot ::                (v2.7.6)
+ :: Spring Boot ::                (v2.7.7)
 
-2024-02-04 11:54:47.666  INFO 11931 --- [  restartedMain] com.apigateway.demo.DemoApplication      : Starting DemoApplication using Java 17.0.9 on developer with PID 11931 (/home/developer/Microservices/JavaProjectConfig/Apigetway/demo/target/classes started by developer in /home/developer/Microservices/JavaProjectConfig/Apigetway/demo)
-2024-02-04 11:54:47.667  INFO 11931 --- [  restartedMain] com.apigateway.demo.DemoApplication      : No active profile set, falling back to 1 default profile: "default"
-2024-02-04 11:54:47.742  INFO 11931 --- [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2024-02-04 11:54:47.742  INFO 11931 --- [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2024-02-04 11:54:48.642  INFO 11931 --- [  restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=10d6c0e6-6762-37ca-8f83-9772927d94f7
-2024-02-04 11:54:48.697  INFO 11931 --- [  restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2024-02-04 11:54:48.698  INFO 11931 --- [  restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2024-02-04 11:54:48.700  INFO 11931 --- [  restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'reactorDeferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2024-02-04 11:54:49.409  INFO 11931 --- [  restartedMain] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [After]
-2024-02-04 11:54:49.410  INFO 11931 --- [  restartedMain] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Before]
-2024-02-04 11:54:49.410  INFO 11931 --- [  restartedMain] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Between]
-2024-02-04 11:54:49.410  INFO 11931 --- [  restartedMain] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Cookie]
-2024-02-04 11:54:49.410  INFO 11931 --- [  restartedMain] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Header]
-2024-02-04 11:54:49.410  INFO 11931 --- [  restartedMain] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Host]
-2024-02-04 11:54:49.410  INFO 11931 --- [  restartedMain] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Method]
-2024-02-04 11:54:49.410  INFO 11931 --- [  restartedMain] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Path]
-2024-02-04 11:54:49.410  INFO 11931 --- [  restartedMain] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Query]
-2024-02-04 11:54:49.410  INFO 11931 --- [  restartedMain] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [ReadBody]
-2024-02-04 11:54:49.410  INFO 11931 --- [  restartedMain] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [RemoteAddr]
-2024-02-04 11:54:49.410  INFO 11931 --- [  restartedMain] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [XForwardedRemoteAddr]
-2024-02-04 11:54:49.410  INFO 11931 --- [  restartedMain] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Weight]
-2024-02-04 11:54:49.410  INFO 11931 --- [  restartedMain] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [CloudFoundryRouteService]
-2024-02-04 11:54:49.563  INFO 11931 --- [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2024-02-04 11:54:49.570  INFO 11931 --- [  restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
-2024-02-04 11:54:49.876  WARN 11931 --- [  restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
-2024-02-04 11:54:49.894  INFO 11931 --- [  restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
-2024-02-04 11:54:49.955  INFO 11931 --- [  restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
-2024-02-04 11:54:49.958  INFO 11931 --- [  restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2024-02-04 11:54:49.971  INFO 11931 --- [  restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
-2024-02-04 11:54:49.972  INFO 11931 --- [  restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
-2024-02-04 11:54:49.972  INFO 11931 --- [  restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
-2024-02-04 11:54:49.972  INFO 11931 --- [  restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
-2024-02-04 11:54:49.972  INFO 11931 --- [  restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
-2024-02-04 11:54:49.972  INFO 11931 --- [  restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
-2024-02-04 11:54:49.972  INFO 11931 --- [  restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
-2024-02-04 11:54:50.223  INFO 11931 --- [  restartedMain] c.n.d.s.t.d.RedirectingEurekaHttpClient  : Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/}, exception=I/O error on GET request for "http://localhost:8761/eureka/apps/": Connect to localhost:8761 [localhost/127.0.0.1] failed: Connection refused; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1] failed: Connection refused stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on GET request for "http://localhost:8761/eureka/apps/": Connect to localhost:8761 [localhost/127.0.0.1] failed: Connection refused; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1] failed: Connection refused
+2024-02-11 16:21:28.372  INFO 73310 --- [           main] c.apigateway.demo.DemoApplicationTests   : Starting DemoApplicationTests using Java 17.0.9 on developer with PID 73310 (started by developer in /home/developer/Microservices/JavaProjectConfig/Apigetway/demo)
+2024-02-11 16:21:28.373  INFO 73310 --- [           main] c.apigateway.demo.DemoApplicationTests   : No active profile set, falling back to 1 default profile: "default"
+2024-02-11 16:21:31.733  INFO 73310 --- [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=f3926d95-c5f1-3026-8acf-c6fc3ea812a3
+2024-02-11 16:21:32.060  INFO 73310 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'com.okta.spring.boot.oauth.ReactiveOktaOAuth2ResourceServerHttpServerAutoConfig' of type [com.okta.spring.boot.oauth.ReactiveOktaOAuth2ResourceServerHttpServerAutoConfig$$EnhancerBySpringCGLIB$$875e4516] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-02-11 16:21:32.145  INFO 73310 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.commons.config.CommonsConfigAutoConfiguration' of type [org.springframework.cloud.commons.config.CommonsConfigAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-02-11 16:21:32.151  INFO 73310 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-02-11 16:21:32.156  INFO 73310 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'loadBalancerClientsDefaultsMappingsProvider' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration$$Lambda$722/0x00007f64844030d8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-02-11 16:21:32.159  INFO 73310 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'defaultsBindHandlerAdvisor' of type [org.springframework.cloud.commons.config.DefaultsBindHandlerAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-02-11 16:21:32.251  INFO 73310 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'spring.security.oauth2.client-org.springframework.boot.autoconfigure.security.oauth2.client.OAuth2ClientProperties' of type [org.springframework.boot.autoconfigure.security.oauth2.client.OAuth2ClientProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-02-11 16:21:32.291  INFO 73310 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'okta.oauth2-com.okta.spring.boot.oauth.config.OktaOAuth2Properties' of type [com.okta.spring.boot.oauth.config.OktaOAuth2Properties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-02-11 16:21:32.319  INFO 73310 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'com.okta.spring.boot.oauth.ReactiveOktaOAuth2ServerHttpServerAutoConfig' of type [com.okta.spring.boot.oauth.ReactiveOktaOAuth2ServerHttpServerAutoConfig$$EnhancerBySpringCGLIB$$355f71a8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-02-11 16:21:32.337  INFO 73310 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'com.okta.spring.boot.oauth.ReactiveOktaOAuth2AutoConfig' of type [com.okta.spring.boot.oauth.ReactiveOktaOAuth2AutoConfig$$EnhancerBySpringCGLIB$$68d85bba] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-02-11 16:21:32.355  INFO 73310 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'com.okta.spring.boot.oauth.AuthorityProvidersConfig' of type [com.okta.spring.boot.oauth.AuthorityProvidersConfig$$EnhancerBySpringCGLIB$$10bb504d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-02-11 16:21:32.367  INFO 73310 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'tokenScopesAuthoritiesProvider' of type [com.okta.spring.boot.oauth.AuthorityProvidersConfig$$Lambda$732/0x00007f648440a910] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-02-11 16:21:32.370  INFO 73310 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'groupClaimsAuthoritiesProvider' of type [com.okta.spring.boot.oauth.AuthorityProvidersConfig$$Lambda$733/0x00007f648440ad40] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-02-11 16:21:32.992  INFO 73310 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'oauth2UserService' of type [com.okta.spring.boot.oauth.ReactiveOktaOAuth2UserService] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-02-11 16:21:33.036  INFO 73310 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'oidcUserService' of type [com.okta.spring.boot.oauth.ReactiveOktaOidcUserService] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-02-11 16:21:33.071  INFO 73310 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-02-11 16:21:33.083  INFO 73310 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-02-11 16:21:33.090  INFO 73310 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'reactorDeferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-02-11 16:21:37.942  INFO 73310 --- [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [After]
+2024-02-11 16:21:37.942  INFO 73310 --- [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Before]
+2024-02-11 16:21:37.942  INFO 73310 --- [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Between]
+2024-02-11 16:21:37.942  INFO 73310 --- [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Cookie]
+2024-02-11 16:21:37.942  INFO 73310 --- [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Header]
+2024-02-11 16:21:37.943  INFO 73310 --- [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Host]
+2024-02-11 16:21:37.943  INFO 73310 --- [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Method]
+2024-02-11 16:21:37.943  INFO 73310 --- [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Path]
+2024-02-11 16:21:37.943  INFO 73310 --- [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Query]
+2024-02-11 16:21:37.943  INFO 73310 --- [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [ReadBody]
+2024-02-11 16:21:37.944  INFO 73310 --- [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [RemoteAddr]
+2024-02-11 16:21:37.944  INFO 73310 --- [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+2024-02-11 16:21:37.944  INFO 73310 --- [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Weight]
+2024-02-11 16:21:37.944  INFO 73310 --- [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2024-02-11 16:21:38.617  INFO 73310 --- [           main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2024-02-11 16:21:38.864  WARN 73310 --- [           main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2024-02-11 16:21:38.894  INFO 73310 --- [           main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2024-02-11 16:21:38.963  INFO 73310 --- [           main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2024-02-11 16:21:38.967  INFO 73310 --- [           main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-02-11 16:21:38.985  INFO 73310 --- [           main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2024-02-11 16:21:38.986  INFO 73310 --- [           main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2024-02-11 16:21:38.986  INFO 73310 --- [           main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2024-02-11 16:21:38.986  INFO 73310 --- [           main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2024-02-11 16:21:38.987  INFO 73310 --- [           main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2024-02-11 16:21:38.987  INFO 73310 --- [           main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2024-02-11 16:21:38.988  INFO 73310 --- [           main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2024-02-11 16:21:39.157  INFO 73310 --- [           main] c.n.d.s.t.d.RedirectingEurekaHttpClient  : Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/}, exception=I/O error on GET request for "http://localhost:8761/eureka/apps/": Connect to localhost:8761 [localhost/127.0.0.1] failed: Connection refused; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1] failed: Connection refused stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on GET request for "http://localhost:8761/eureka/apps/": Connect to localhost:8761 [localhost/127.0.0.1] failed: Connection refused; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1] failed: Connection refused
 	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:791)
 	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:717)
 	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:608)
@@ -125,7 +157,7 @@
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
 	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
 	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:708)
-	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaRegistration$$EnhancerBySpringCGLIB$$aded9513.getEurekaClient(<generated>)
+	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaRegistration$$EnhancerBySpringCGLIB$$1fbc13bf.getEurekaClient(<generated>)
 	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry.maybeInitializeClient(EurekaServiceRegistry.java:54)
 	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry.register(EurekaServiceRegistry.java:38)
 	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration.start(EurekaAutoServiceRegistration.java:83)
@@ -137,18 +169,80 @@
 	at org.springframework.context.support.DefaultLifecycleProcessor.onRefresh(DefaultLifecycleProcessor.java:123)
 	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:935)
 	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:586)
-	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.refresh(ReactiveWebServerApplicationContext.java:66)
 	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731)
 	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292)
-	at com.apigateway.demo.DemoApplication.main(DemoApplication.java:12)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:136)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:141)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:90)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:124)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:118)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83)
+	at org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener.prepareTestInstance(SpringBootDependencyInjectionTestExecutionListener.java:43)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:248)
+	at org.springframework.test.context.junit.jupiter.SpringExtension.postProcessTestInstance(SpringExtension.java:138)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$8(ClassBasedTestDescriptor.java:363)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.executeAndMaskThrowable(ClassBasedTestDescriptor.java:368)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$9(ClassBasedTestDescriptor.java:363)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1625)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.StreamSpliterators$WrappingSpliterator.forEachRemaining(StreamSpliterators.java:310)
+	at java.base/java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:735)
+	at java.base/java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:734)
+	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeTestInstancePostProcessors(ClassBasedTestDescriptor.java:362)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$instantiateAndPostProcessTestInstance$6(ClassBasedTestDescriptor.java:283)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.instantiateAndPostProcessTestInstance(ClassBasedTestDescriptor.java:282)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$4(ClassBasedTestDescriptor.java:272)
+	at java.base/java.util.Optional.orElseGet(Optional.java:364)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$5(ClassBasedTestDescriptor.java:271)
+	at org.junit.jupiter.engine.execution.TestInstancesProvider.getTestInstances(TestInstancesProvider.java:31)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$prepare$0(TestMethodTestDescriptor.java:102)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:101)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:66)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$prepare$2(NodeTestTask.java:123)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.prepare(NodeTestTask.java:123)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:90)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:220)
+	at org.junit.platform.launcher.core.DefaultLauncher.lambda$execute$6(DefaultLauncher.java:188)
+	at org.junit.platform.launcher.core.DefaultLauncher.withInterceptedStreams(DefaultLauncher.java:202)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:181)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:128)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:150)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:124)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
 Caused by: org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1] failed: Connection refused
 	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:156)
 	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
@@ -164,7 +258,7 @@ Caused by: org.apache.http.conn.HttpHostConnectException: Connect to localhost:8
 	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
 	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66)
 	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:782)
-	... 73 more
+	... 135 more
 Caused by: java.net.ConnectException: Connection refused
 	at java.base/sun.nio.ch.Net.connect0(Native Method)
 	at java.base/sun.nio.ch.Net.connect(Net.java:579)
@@ -174,10 +268,10 @@ Caused by: java.net.ConnectException: Connection refused
 	at java.base/java.net.Socket.connect(Socket.java:633)
 	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:75)
 	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
-	... 86 more
+	... 148 more
 
-2024-02-04 11:54:50.223  WARN 11931 --- [  restartedMain] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failed with message: I/O error on GET request for "http://localhost:8761/eureka/apps/": Connect to localhost:8761 [localhost/127.0.0.1] failed: Connection refused; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1] failed: Connection refused
-2024-02-04 11:54:50.224  INFO 11931 --- [  restartedMain] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_API-GATEWAY/192.168.1.12:API-GATEWAY:8084 - was unable to refresh its cache! This periodic background refresh will be retried in 30 seconds. status = Cannot execute request on any known server stacktrace = com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+2024-02-11 16:21:39.158  WARN 73310 --- [           main] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failed with message: I/O error on GET request for "http://localhost:8761/eureka/apps/": Connect to localhost:8761 [localhost/127.0.0.1] failed: Connection refused; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1] failed: Connection refused
+2024-02-11 16:21:39.184  INFO 73310 --- [           main] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_API-GATEWAY/192.168.1.12:API-GATEWAY:8084 - was unable to refresh its cache! This periodic background refresh will be retried in 30 seconds. status = Cannot execute request on any known server stacktrace = com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
 	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
 	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getApplications(EurekaHttpClientDecorator.java:134)
 	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$6.execute(EurekaHttpClientDecorator.java:137)
@@ -218,7 +312,7 @@ Caused by: java.net.ConnectException: Connection refused
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
 	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
 	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:708)
-	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaRegistration$$EnhancerBySpringCGLIB$$aded9513.getEurekaClient(<generated>)
+	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaRegistration$$EnhancerBySpringCGLIB$$1fbc13bf.getEurekaClient(<generated>)
 	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry.maybeInitializeClient(EurekaServiceRegistry.java:54)
 	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry.register(EurekaServiceRegistry.java:38)
 	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration.start(EurekaAutoServiceRegistration.java:83)
@@ -230,29 +324,91 @@ Caused by: java.net.ConnectException: Connection refused
 	at org.springframework.context.support.DefaultLifecycleProcessor.onRefresh(DefaultLifecycleProcessor.java:123)
 	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:935)
 	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:586)
-	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.refresh(ReactiveWebServerApplicationContext.java:66)
 	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731)
 	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292)
-	at com.apigateway.demo.DemoApplication.main(DemoApplication.java:12)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:136)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:141)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:90)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:124)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:118)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83)
+	at org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener.prepareTestInstance(SpringBootDependencyInjectionTestExecutionListener.java:43)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:248)
+	at org.springframework.test.context.junit.jupiter.SpringExtension.postProcessTestInstance(SpringExtension.java:138)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$8(ClassBasedTestDescriptor.java:363)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.executeAndMaskThrowable(ClassBasedTestDescriptor.java:368)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$9(ClassBasedTestDescriptor.java:363)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1625)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.StreamSpliterators$WrappingSpliterator.forEachRemaining(StreamSpliterators.java:310)
+	at java.base/java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:735)
+	at java.base/java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:734)
+	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeTestInstancePostProcessors(ClassBasedTestDescriptor.java:362)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$instantiateAndPostProcessTestInstance$6(ClassBasedTestDescriptor.java:283)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.instantiateAndPostProcessTestInstance(ClassBasedTestDescriptor.java:282)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$4(ClassBasedTestDescriptor.java:272)
+	at java.base/java.util.Optional.orElseGet(Optional.java:364)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$5(ClassBasedTestDescriptor.java:271)
+	at org.junit.jupiter.engine.execution.TestInstancesProvider.getTestInstances(TestInstancesProvider.java:31)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$prepare$0(TestMethodTestDescriptor.java:102)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:101)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:66)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$prepare$2(NodeTestTask.java:123)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.prepare(NodeTestTask.java:123)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:90)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:220)
+	at org.junit.platform.launcher.core.DefaultLauncher.lambda$execute$6(DefaultLauncher.java:188)
+	at org.junit.platform.launcher.core.DefaultLauncher.withInterceptedStreams(DefaultLauncher.java:202)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:181)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:128)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:150)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:124)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
 
-2024-02-04 11:54:50.224  INFO 11931 --- [  restartedMain] com.netflix.discovery.DiscoveryClient    : Initial registry fetch from primary servers failed
-2024-02-04 11:54:50.224  WARN 11931 --- [  restartedMain] com.netflix.discovery.DiscoveryClient    : Using default backup registry implementation which does not do anything.
-2024-02-04 11:54:50.224  INFO 11931 --- [  restartedMain] com.netflix.discovery.DiscoveryClient    : Initial registry fetch from backup servers failed
-2024-02-04 11:54:50.225  INFO 11931 --- [  restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
-2024-02-04 11:54:50.227  INFO 11931 --- [  restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
-2024-02-04 11:54:50.229  INFO 11931 --- [  restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1707027890229 with initial instances count: 0
-2024-02-04 11:54:50.230  INFO 11931 --- [  restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application API-GATEWAY with eureka with status UP
-2024-02-04 11:54:50.230  INFO 11931 --- [  restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1707027890230, current=UP, previous=STARTING]
-2024-02-04 11:54:50.231  INFO 11931 --- [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_API-GATEWAY/192.168.1.12:API-GATEWAY:8084: registering service...
-2024-02-04 11:54:50.258  INFO 11931 --- [nfoReplicator-0] c.n.d.s.t.d.RedirectingEurekaHttpClient  : Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/}, exception=I/O error on POST request for "http://localhost:8761/eureka/apps/API-GATEWAY": Connect to localhost:8761 [localhost/127.0.0.1] failed: Connection refused; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1] failed: Connection refused stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://localhost:8761/eureka/apps/API-GATEWAY": Connect to localhost:8761 [localhost/127.0.0.1] failed: Connection refused; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1] failed: Connection refused
+2024-02-11 16:21:39.190  INFO 73310 --- [           main] com.netflix.discovery.DiscoveryClient    : Initial registry fetch from primary servers failed
+2024-02-11 16:21:39.190  WARN 73310 --- [           main] com.netflix.discovery.DiscoveryClient    : Using default backup registry implementation which does not do anything.
+2024-02-11 16:21:39.191  INFO 73310 --- [           main] com.netflix.discovery.DiscoveryClient    : Initial registry fetch from backup servers failed
+2024-02-11 16:21:39.193  INFO 73310 --- [           main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2024-02-11 16:21:39.196  INFO 73310 --- [           main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2024-02-11 16:21:39.200  INFO 73310 --- [           main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1707648699199 with initial instances count: 0
+2024-02-11 16:21:39.205  INFO 73310 --- [           main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application API-GATEWAY with eureka with status UP
+2024-02-11 16:21:39.206  INFO 73310 --- [           main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1707648699205, current=UP, previous=STARTING]
+2024-02-11 16:21:39.208  INFO 73310 --- [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_API-GATEWAY/192.168.1.12:API-GATEWAY:8084: registering service...
+2024-02-11 16:21:39.273  INFO 73310 --- [nfoReplicator-0] c.n.d.s.t.d.RedirectingEurekaHttpClient  : Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/}, exception=I/O error on POST request for "http://localhost:8761/eureka/apps/API-GATEWAY": Connect to localhost:8761 [localhost/127.0.0.1] failed: Connection refused; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1] failed: Connection refused stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://localhost:8761/eureka/apps/API-GATEWAY": Connect to localhost:8761 [localhost/127.0.0.1] failed: Connection refused; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1] failed: Connection refused
 	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:791)
 	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:717)
 	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:608)
@@ -303,8 +459,8 @@ Caused by: java.net.ConnectException: Connection refused
 	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
 	... 35 more
 
-2024-02-04 11:54:50.258  WARN 11931 --- [nfoReplicator-0] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failed with message: I/O error on POST request for "http://localhost:8761/eureka/apps/API-GATEWAY": Connect to localhost:8761 [localhost/127.0.0.1] failed: Connection refused; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1] failed: Connection refused
-2024-02-04 11:54:50.260  WARN 11931 --- [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_API-GATEWAY/192.168.1.12:API-GATEWAY:8084 - registration failed Cannot execute request on any known server
+2024-02-11 16:21:39.273  WARN 73310 --- [nfoReplicator-0] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failed with message: I/O error on POST request for "http://localhost:8761/eureka/apps/API-GATEWAY": Connect to localhost:8761 [localhost/127.0.0.1] failed: Connection refused; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1] failed: Connection refused
+2024-02-11 16:21:39.286  WARN 73310 --- [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_API-GATEWAY/192.168.1.12:API-GATEWAY:8084 - registration failed Cannot execute request on any known server
 
 com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
 	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112) ~[eureka-client-1.10.17.jar:1.10.17]
@@ -322,7 +478,7 @@ com.netflix.discovery.shared.transport.TransportException: Cannot execute reques
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[na:na]
 	at java.base/java.lang.Thread.run(Thread.java:840) ~[na:na]
 
-2024-02-04 11:54:50.261  WARN 11931 --- [nfoReplicator-0] c.n.discovery.InstanceInfoReplicator     : There was a problem with the instance info replicator
+2024-02-11 16:21:39.288  WARN 73310 --- [nfoReplicator-0] c.n.discovery.InstanceInfoReplicator     : There was a problem with the instance info replicator
 
 com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
 	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112) ~[eureka-client-1.10.17.jar:1.10.17]
@@ -340,126 +496,330 @@ com.netflix.discovery.shared.transport.TransportException: Cannot execute reques
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[na:na]
 	at java.base/java.lang.Thread.run(Thread.java:840) ~[na:na]
 
-2024-02-04 11:54:50.370  INFO 11931 --- [  restartedMain] o.s.b.web.embedded.netty.NettyWebServer  : Netty started on port 8084
-2024-02-04 11:54:50.372  INFO 11931 --- [  restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8084
-2024-02-04 11:54:50.593  INFO 11931 --- [  restartedMain] com.apigateway.demo.DemoApplication      : Started DemoApplication in 3.824 seconds (JVM running for 4.827)
-2024-02-04 11:55:20.226  INFO 11931 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
-2024-02-04 11:55:20.226  INFO 11931 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
-2024-02-04 11:55:20.226  INFO 11931 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
-2024-02-04 11:55:20.226  INFO 11931 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application is null : false
-2024-02-04 11:55:20.227  INFO 11931 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
-2024-02-04 11:55:20.227  INFO 11931 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
-2024-02-04 11:55:20.227  INFO 11931 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
-2024-02-04 11:55:20.261  INFO 11931 --- [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_API-GATEWAY/192.168.1.12:API-GATEWAY:8084: registering service...
-2024-02-04 11:55:20.304  INFO 11931 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : The response status is 200
-2024-02-04 11:55:20.321  INFO 11931 --- [tbeatExecutor-0] c.n.d.s.t.d.RedirectingEurekaHttpClient  : Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/}, exception=Error while extracting response for type [class com.netflix.appinfo.InstanceInfo] and content type [application/json]; nested exception is org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Root name ('timestamp') does not match expected ('instance') for type `com.netflix.appinfo.InstanceInfo`; nested exception is com.fasterxml.jackson.databind.exc.MismatchedInputException: Root name ('timestamp') does not match expected ('instance') for type `com.netflix.appinfo.InstanceInfo`
- at [Source: (org.springframework.util.StreamUtils$NonClosingInputStream); line: 1, column: 2] (through reference chain: com.netflix.appinfo.InstanceInfo["timestamp"]) stacktrace=org.springframework.web.client.RestClientException: Error while extracting response for type [class com.netflix.appinfo.InstanceInfo] and content type [application/json]; nested exception is org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Root name ('timestamp') does not match expected ('instance') for type `com.netflix.appinfo.InstanceInfo`; nested exception is com.fasterxml.jackson.databind.exc.MismatchedInputException: Root name ('timestamp') does not match expected ('instance') for type `com.netflix.appinfo.InstanceInfo`
- at [Source: (org.springframework.util.StreamUtils$NonClosingInputStream); line: 1, column: 2] (through reference chain: com.netflix.appinfo.InstanceInfo["timestamp"])
-	at org.springframework.web.client.HttpMessageConverterExtractor.extractData(HttpMessageConverterExtractor.java:120)
-	at org.springframework.web.client.RestTemplate$ResponseEntityResponseExtractor.extractData(RestTemplate.java:1043)
-	at org.springframework.web.client.RestTemplate$ResponseEntityResponseExtractor.extractData(RestTemplate.java:1026)
-	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:784)
+2024-02-11 16:21:39.316  INFO 73310 --- [           main] c.apigateway.demo.DemoApplicationTests   : Started DemoApplicationTests in 12.574 seconds (JVM running for 17.264)
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m1[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 14.998 s - in com.apigateway.demo.[1mDemoApplicationTests[m
+2024-02-11 16:21:39.739  INFO 73310 --- [ionShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application API-GATEWAY with eureka with status DOWN
+2024-02-11 16:21:39.739  INFO 73310 --- [ionShutdownHook] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1707648699739, current=DOWN, previous=UP]
+2024-02-11 16:21:39.739  INFO 73310 --- [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_API-GATEWAY/192.168.1.12:API-GATEWAY:8084: registering service...
+2024-02-11 16:21:39.748  INFO 73310 --- [nfoReplicator-0] c.n.d.s.t.d.RedirectingEurekaHttpClient  : Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/}, exception=I/O error on POST request for "http://localhost:8761/eureka/apps/API-GATEWAY": Connect to localhost:8761 [localhost/127.0.0.1] failed: Connection refused; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1] failed: Connection refused stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://localhost:8761/eureka/apps/API-GATEWAY": Connect to localhost:8761 [localhost/127.0.0.1] failed: Connection refused; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1] failed: Connection refused
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:791)
 	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:717)
 	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:608)
-	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.sendHeartBeat(RestTemplateEurekaHttpClient.java:99)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.register(RestTemplateEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
 	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:121)
 	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:80)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
 	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
 	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
-	at com.netflix.discovery.DiscoveryClient.renew(DiscoveryClient.java:893)
-	at com.netflix.discovery.DiscoveryClient$HeartbeatThread.run(DiscoveryClient.java:1457)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:876)
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:121)
+	at com.netflix.discovery.InstanceInfoReplicator$1.run(InstanceInfoReplicator.java:101)
 	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 	at java.base/java.lang.Thread.run(Thread.java:840)
-Caused by: org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Root name ('timestamp') does not match expected ('instance') for type `com.netflix.appinfo.InstanceInfo`; nested exception is com.fasterxml.jackson.databind.exc.MismatchedInputException: Root name ('timestamp') does not match expected ('instance') for type `com.netflix.appinfo.InstanceInfo`
- at [Source: (org.springframework.util.StreamUtils$NonClosingInputStream); line: 1, column: 2] (through reference chain: com.netflix.appinfo.InstanceInfo["timestamp"])
-	at org.springframework.http.converter.json.AbstractJackson2HttpMessageConverter.readJavaType(AbstractJackson2HttpMessageConverter.java:391)
-	at org.springframework.http.converter.json.AbstractJackson2HttpMessageConverter.read(AbstractJackson2HttpMessageConverter.java:343)
-	at org.springframework.web.client.HttpMessageConverterExtractor.extractData(HttpMessageConverterExtractor.java:105)
-	... 23 more
-Caused by: com.fasterxml.jackson.databind.exc.MismatchedInputException: Root name ('timestamp') does not match expected ('instance') for type `com.netflix.appinfo.InstanceInfo`
- at [Source: (org.springframework.util.StreamUtils$NonClosingInputStream); line: 1, column: 2] (through reference chain: com.netflix.appinfo.InstanceInfo["timestamp"])
-	at com.fasterxml.jackson.databind.exc.MismatchedInputException.from(MismatchedInputException.java:63)
-	at com.fasterxml.jackson.databind.DeserializationContext.reportPropertyInputMismatch(DeserializationContext.java:1776)
-	at com.fasterxml.jackson.databind.DeserializationContext.reportPropertyInputMismatch(DeserializationContext.java:1792)
-	at com.fasterxml.jackson.databind.deser.DefaultDeserializationContext._unwrapAndDeserialize(DefaultDeserializationContext.java:348)
-	at com.fasterxml.jackson.databind.deser.DefaultDeserializationContext.readRootValue(DefaultDeserializationContext.java:320)
-	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4674)
-	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3682)
-	at org.springframework.http.converter.json.AbstractJackson2HttpMessageConverter.readJavaType(AbstractJackson2HttpMessageConverter.java:380)
-	... 25 more
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1] failed: Connection refused
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:156)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at org.springframework.http.client.HttpComponentsClientHttpRequest.executeInternal(HttpComponentsClientHttpRequest.java:87)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:782)
+	... 22 more
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:579)
+	at java.base/sun.nio.ch.Net.connect(Net.java:568)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:593)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:633)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:75)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+	... 35 more
 
-2024-02-04 11:55:20.321  WARN 11931 --- [tbeatExecutor-0] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failed with message: Error while extracting response for type [class com.netflix.appinfo.InstanceInfo] and content type [application/json]; nested exception is org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Root name ('timestamp') does not match expected ('instance') for type `com.netflix.appinfo.InstanceInfo`; nested exception is com.fasterxml.jackson.databind.exc.MismatchedInputException: Root name ('timestamp') does not match expected ('instance') for type `com.netflix.appinfo.InstanceInfo`
- at [Source: (org.springframework.util.StreamUtils$NonClosingInputStream); line: 1, column: 2] (through reference chain: com.netflix.appinfo.InstanceInfo["timestamp"])
-2024-02-04 11:55:20.321 ERROR 11931 --- [tbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_API-GATEWAY/192.168.1.12:API-GATEWAY:8084 - was unable to send heartbeat!
+2024-02-11 16:21:39.748  INFO 73310 --- [ionShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2024-02-11 16:21:39.748  WARN 73310 --- [nfoReplicator-0] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failed with message: I/O error on POST request for "http://localhost:8761/eureka/apps/API-GATEWAY": Connect to localhost:8761 [localhost/127.0.0.1] failed: Connection refused; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1] failed: Connection refused
+2024-02-11 16:21:39.748  WARN 73310 --- [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_API-GATEWAY/192.168.1.12:API-GATEWAY:8084 - registration failed Cannot execute request on any known server
 
 com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
 	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112) ~[eureka-client-1.10.17.jar:1.10.17]
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89) ~[eureka-client-1.10.17.jar:1.10.17]
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92) ~[eureka-client-1.10.17.jar:1.10.17]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56) ~[eureka-client-1.10.17.jar:1.10.17]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59) ~[eureka-client-1.10.17.jar:1.10.17]
 	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77) ~[eureka-client-1.10.17.jar:1.10.17]
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89) ~[eureka-client-1.10.17.jar:1.10.17]
-	at com.netflix.discovery.DiscoveryClient.renew(DiscoveryClient.java:893) ~[eureka-client-1.10.17.jar:1.10.17]
-	at com.netflix.discovery.DiscoveryClient$HeartbeatThread.run(DiscoveryClient.java:1457) ~[eureka-client-1.10.17.jar:1.10.17]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56) ~[eureka-client-1.10.17.jar:1.10.17]
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:876) ~[eureka-client-1.10.17.jar:1.10.17]
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:121) ~[eureka-client-1.10.17.jar:1.10.17]
+	at com.netflix.discovery.InstanceInfoReplicator$1.run(InstanceInfoReplicator.java:101) ~[eureka-client-1.10.17.jar:1.10.17]
 	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) ~[na:na]
 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[na:na]
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[na:na]
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[na:na]
 	at java.base/java.lang.Thread.run(Thread.java:840) ~[na:na]
 
-2024-02-04 11:55:20.335  INFO 11931 --- [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_API-GATEWAY/192.168.1.12:API-GATEWAY:8084 - registration status: 204
-2024-02-04 11:55:50.314  INFO 11931 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
-2024-02-04 11:55:50.314  INFO 11931 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
-2024-02-04 11:55:50.314  INFO 11931 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
-2024-02-04 11:55:50.314  INFO 11931 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application is null : false
-2024-02-04 11:55:50.314  INFO 11931 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
-2024-02-04 11:55:50.314  INFO 11931 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
-2024-02-04 11:55:50.314  INFO 11931 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
-2024-02-04 11:55:50.330  INFO 11931 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : The response status is 200
-2024-02-04 11:59:49.973  INFO 11931 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2024-02-04 12:04:49.974  INFO 11931 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2024-02-04 12:09:49.977  INFO 11931 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2024-02-04 12:14:49.980  INFO 11931 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2024-02-04 12:19:49.981  INFO 11931 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2024-02-04 12:24:49.982  INFO 11931 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2024-02-04 12:29:49.984  INFO 11931 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2024-02-04 12:34:49.985  INFO 11931 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2024-02-04 12:39:49.986  INFO 11931 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2024-02-04 12:44:49.987  INFO 11931 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2024-02-04 12:49:49.987  INFO 11931 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2024-02-04 12:54:49.990  INFO 11931 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2024-02-04 12:59:49.990  INFO 11931 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2024-02-04 13:04:49.992  INFO 11931 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2024-02-04 13:09:49.993  INFO 11931 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2024-02-04 13:14:49.996  INFO 11931 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2024-02-04 13:19:49.997  INFO 11931 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2024-02-04 13:24:49.997  INFO 11931 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2024-02-04 13:29:49.998  INFO 11931 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2024-02-04 13:34:49.999  INFO 11931 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2024-02-04 13:39:49.999  INFO 11931 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2024-02-04 13:44:50.000  INFO 11931 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2024-02-04 13:49:50.001  INFO 11931 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2024-02-04 13:54:50.002  INFO 11931 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2024-02-04 13:59:50.003  INFO 11931 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2024-02-04 14:04:50.004  INFO 11931 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2024-02-04 14:09:50.007  INFO 11931 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2024-02-04 14:14:50.007  INFO 11931 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2024-02-04 14:19:50.008  INFO 11931 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2024-02-04 14:24:50.010  INFO 11931 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2024-02-04 14:29:50.011  INFO 11931 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2024-02-04 14:34:50.013  INFO 11931 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2024-02-04 14:39:50.014  INFO 11931 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2024-02-04 14:44:50.014  INFO 11931 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2024-02-04 14:49:50.015  INFO 11931 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2024-02-04 14:54:50.018  INFO 11931 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2024-02-04 14:59:50.018  INFO 11931 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2024-02-04 15:04:50.019  INFO 11931 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2024-02-04 15:09:50.020  INFO 11931 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-02-11 16:21:39.748  WARN 73310 --- [nfoReplicator-0] c.n.discovery.InstanceInfoReplicator     : There was a problem with the instance info replicator
+
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112) ~[eureka-client-1.10.17.jar:1.10.17]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56) ~[eureka-client-1.10.17.jar:1.10.17]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59) ~[eureka-client-1.10.17.jar:1.10.17]
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77) ~[eureka-client-1.10.17.jar:1.10.17]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56) ~[eureka-client-1.10.17.jar:1.10.17]
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:876) ~[eureka-client-1.10.17.jar:1.10.17]
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:121) ~[eureka-client-1.10.17.jar:1.10.17]
+	at com.netflix.discovery.InstanceInfoReplicator$1.run(InstanceInfoReplicator.java:101) ~[eureka-client-1.10.17.jar:1.10.17]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:840) ~[na:na]
+
+2024-02-11 16:21:39.758  INFO 73310 --- [ionShutdownHook] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2024-02-11 16:21:39.768  INFO 73310 --- [ionShutdownHook] c.n.d.s.t.d.RedirectingEurekaHttpClient  : Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/}, exception=I/O error on DELETE request for "http://localhost:8761/eureka/apps/API-GATEWAY/192.168.1.12:API-GATEWAY:8084": Connect to localhost:8761 [localhost/127.0.0.1] failed: Connection refused; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1] failed: Connection refused stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on DELETE request for "http://localhost:8761/eureka/apps/API-GATEWAY/192.168.1.12:API-GATEWAY:8084": Connect to localhost:8761 [localhost/127.0.0.1] failed: Connection refused; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1] failed: Connection refused
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:791)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:717)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:608)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.cancel(RestTemplateEurekaHttpClient.java:87)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:121)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:80)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.DiscoveryClient.unregister(DiscoveryClient.java:972)
+	at com.netflix.discovery.DiscoveryClient.shutdown(DiscoveryClient.java:948)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleElement.invoke(InitDestroyAnnotationBeanPostProcessor.java:389)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeDestroyMethods(InitDestroyAnnotationBeanPostProcessor.java:347)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeDestruction(InitDestroyAnnotationBeanPostProcessor.java:177)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:197)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.run(DisposableBeanAdapter.java:190)
+	at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.destroy(GenericScope.java:390)
+	at org.springframework.cloud.context.scope.GenericScope.destroy(GenericScope.java:136)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:213)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:587)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:559)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1163)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:520)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1156)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1106)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1075)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1021)
+	at org.springframework.boot.SpringApplicationShutdownHook.closeAndWait(SpringApplicationShutdownHook.java:145)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.boot.SpringApplicationShutdownHook.run(SpringApplicationShutdownHook.java:114)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1] failed: Connection refused
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:156)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at org.springframework.http.client.HttpComponentsClientHttpRequest.executeInternal(HttpComponentsClientHttpRequest.java:87)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:782)
+	... 39 more
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:579)
+	at java.base/sun.nio.ch.Net.connect(Net.java:568)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:593)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:633)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:75)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+	... 52 more
+
+2024-02-11 16:21:39.768  WARN 73310 --- [ionShutdownHook] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failed with message: I/O error on DELETE request for "http://localhost:8761/eureka/apps/API-GATEWAY/192.168.1.12:API-GATEWAY:8084": Connect to localhost:8761 [localhost/127.0.0.1] failed: Connection refused; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1] failed: Connection refused
+2024-02-11 16:21:39.771 ERROR 73310 --- [ionShutdownHook] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_API-GATEWAY/192.168.1.12:API-GATEWAY:8084 - de-registration failedCannot execute request on any known server
+
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112) ~[eureka-client-1.10.17.jar:1.10.17]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71) ~[eureka-client-1.10.17.jar:1.10.17]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74) ~[eureka-client-1.10.17.jar:1.10.17]
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77) ~[eureka-client-1.10.17.jar:1.10.17]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71) ~[eureka-client-1.10.17.jar:1.10.17]
+	at com.netflix.discovery.DiscoveryClient.unregister(DiscoveryClient.java:972) ~[eureka-client-1.10.17.jar:1.10.17]
+	at com.netflix.discovery.DiscoveryClient.shutdown(DiscoveryClient.java:948) ~[eureka-client-1.10.17.jar:1.10.17]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleElement.invoke(InitDestroyAnnotationBeanPostProcessor.java:389) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeDestroyMethods(InitDestroyAnnotationBeanPostProcessor.java:347) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeDestruction(InitDestroyAnnotationBeanPostProcessor.java:177) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:197) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.run(DisposableBeanAdapter.java:190) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.destroy(GenericScope.java:390) ~[spring-cloud-context-3.1.3.jar:3.1.3]
+	at org.springframework.cloud.context.scope.GenericScope.destroy(GenericScope.java:136) ~[spring-cloud-context-3.1.3.jar:3.1.3]
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:213) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:587) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:559) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1163) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:520) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1156) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1106) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1075) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1021) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.springframework.boot.SpringApplicationShutdownHook.closeAndWait(SpringApplicationShutdownHook.java:145) ~[spring-boot-2.7.7.jar:2.7.7]
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75) ~[na:na]
+	at org.springframework.boot.SpringApplicationShutdownHook.run(SpringApplicationShutdownHook.java:114) ~[spring-boot-2.7.7.jar:2.7.7]
+	at java.base/java.lang.Thread.run(Thread.java:840) ~[na:na]
+
+2024-02-11 16:21:39.787  INFO 73310 --- [ionShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+[[1;34mINFO[m] 
+[[1;34mINFO[m] Results:
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1;32mTests run: 1, Failures: 0, Errors: 0, Skipped: 0[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-jar-plugin:3.2.2:jar[m [1m(default-jar)[m @ [36mdemo[0;1m ---[m
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/file-management/3.0.0/file-management-3.0.0.pom
+Progress (1): 2.8/4.7 kBProgress (1): 4.7 kB                        Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/file-management/3.0.0/file-management-3.0.0.pom (4.7 kB at 15 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-components/22/maven-shared-components-22.pom
+Progress (1): 2.8/5.1 kBProgress (1): 5.1 kB                        Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-components/22/maven-shared-components-22.pom (5.1 kB at 160 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-io/3.0.0/maven-shared-io-3.0.0.pom
+Progress (1): 2.8/4.2 kBProgress (1): 4.2 kB                        Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-io/3.0.0/maven-shared-io-3.0.0.pom (4.2 kB at 181 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-compat/3.0/maven-compat-3.0.pom
+Progress (1): 2.8/4.0 kBProgress (1): 4.0 kB                        Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-compat/3.0/maven-compat-3.0.pom (4.0 kB at 237 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/wagon/wagon-provider-api/1.0-beta-6/wagon-provider-api-1.0-beta-6.pom
+Progress (1): 1.8 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/wagon/wagon-provider-api/1.0-beta-6/wagon-provider-api-1.0-beta-6.pom (1.8 kB at 43 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/wagon/wagon/1.0-beta-6/wagon-1.0-beta-6.pom
+Progress (1): 2.8/12 kBProgress (1): 5.5/12 kBProgress (1): 8.3/12 kBProgress (1): 11/12 kB Progress (1): 12 kB                      Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/wagon/wagon/1.0-beta-6/wagon-1.0-beta-6.pom (12 kB at 344 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/1.4.2/plexus-utils-1.4.2.pom
+Progress (1): 2.0 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/1.4.2/plexus-utils-1.4.2.pom (2.0 kB at 89 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/wagon/wagon-provider-api/2.10/wagon-provider-api-2.10.pom
+Progress (1): 1.7 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/wagon/wagon-provider-api/2.10/wagon-provider-api-2.10.pom (1.7 kB at 48 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/wagon/wagon/2.10/wagon-2.10.pom
+Progress (1): 4.1/21 kBProgress (1): 8.2/21 kBProgress (1): 12/21 kB Progress (1): 16/21 kBProgress (1): 20/21 kBProgress (1): 21 kB                      Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/wagon/wagon/2.10/wagon-2.10.pom (21 kB at 707 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/26/maven-parent-26.pom
+Progress (1): 4.1/40 kBProgress (1): 8.2/40 kBProgress (1): 12/40 kB Progress (1): 16/40 kBProgress (1): 20/40 kBProgress (1): 24/40 kBProgress (1): 28/40 kBProgress (1): 32/40 kBProgress (1): 36/40 kBProgress (1): 40 kB                      Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/26/maven-parent-26.pom (40 kB at 947 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/3.0.15/plexus-utils-3.0.15.pom
+Progress (1): 3.1 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/3.0.15/plexus-utils-3.0.15.pom (3.1 kB at 157 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-utils/3.0.0/maven-shared-utils-3.0.0.pom
+Progress (1): 4.1/5.6 kBProgress (1): 5.6 kB                        Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-utils/3.0.0/maven-shared-utils-3.0.0.pom (5.6 kB at 279 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-components/21/maven-shared-components-21.pom
+Progress (1): 4.1/5.1 kBProgress (1): 5.1 kB                        Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-components/21/maven-shared-components-21.pom (5.1 kB at 222 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/commons-io/commons-io/2.4/commons-io-2.4.pom
+Progress (1): 4.1/10 kBProgress (1): 8.2/10 kBProgress (1): 10 kB                       Downloaded from central: https://repo.maven.apache.org/maven2/commons-io/commons-io/2.4/commons-io-2.4.pom (10 kB at 299 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-parent/25/commons-parent-25.pom
+Progress (1): 4.1/48 kBProgress (1): 8.2/48 kBProgress (1): 12/48 kB Progress (1): 16/48 kBProgress (1): 20/48 kBProgress (1): 25/48 kBProgress (1): 29/48 kBProgress (1): 33/48 kBProgress (1): 37/48 kBProgress (1): 41/48 kBProgress (1): 45/48 kBProgress (1): 48 kB                      Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-parent/25/commons-parent-25.pom (48 kB at 1.2 MB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/apache/9/apache-9.pom
+Progress (1): 4.1/15 kBProgress (1): 8.2/15 kBProgress (1): 12/15 kB Progress (1): 15 kB                      Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/apache/9/apache-9.pom (15 kB at 541 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-archiver/3.5.2/maven-archiver-3.5.2.pom
+Progress (1): 4.1/5.5 kBProgress (1): 5.5 kB                        Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-archiver/3.5.2/maven-archiver-3.5.2.pom (5.5 kB at 427 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact/3.1.1/maven-artifact-3.1.1.pom
+Progress (1): 2.0 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact/3.1.1/maven-artifact-3.1.1.pom (2.0 kB at 141 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven/3.1.1/maven-3.1.1.pom
+Progress (1): 4.1/22 kBProgress (1): 8.2/22 kBProgress (1): 12/22 kB Progress (1): 16/22 kBProgress (1): 20/22 kBProgress (1): 22 kB                      Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven/3.1.1/maven-3.1.1.pom (22 kB at 921 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-model/3.1.1/maven-model-3.1.1.pom
+Progress (1): 4.1/4.1 kBProgress (1): 4.1 kB                        Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-model/3.1.1/maven-model-3.1.1.pom (4.1 kB at 230 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-core/3.1.1/maven-core-3.1.1.pom
+Progress (1): 4.1/7.3 kBProgress (1): 7.3 kB                        Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-core/3.1.1/maven-core-3.1.1.pom (7.3 kB at 346 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-settings/3.1.1/maven-settings-3.1.1.pom
+Progress (1): 2.2 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-settings/3.1.1/maven-settings-3.1.1.pom (2.2 kB at 90 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-settings-builder/3.1.1/maven-settings-builder-3.1.1.pom
+Progress (1): 2.6 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-settings-builder/3.1.1/maven-settings-builder-3.1.1.pom (2.6 kB at 173 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-interpolation/1.19/plexus-interpolation-1.19.pom
+Progress (1): 1.0 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-interpolation/1.19/plexus-interpolation-1.19.pom (1.0 kB at 61 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-repository-metadata/3.1.1/maven-repository-metadata-3.1.1.pom
+Progress (1): 2.2 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-repository-metadata/3.1.1/maven-repository-metadata-3.1.1.pom (2.2 kB at 149 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-api/3.1.1/maven-plugin-api-3.1.1.pom
+Progress (1): 3.4 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-api/3.1.1/maven-plugin-api-3.1.1.pom (3.4 kB at 211 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/sisu/org.eclipse.sisu.plexus/0.0.0.M5/org.eclipse.sisu.plexus-0.0.0.M5.pom
+Progress (1): 4.1/4.8 kBProgress (1): 4.8 kB                        Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/sisu/org.eclipse.sisu.plexus/0.0.0.M5/org.eclipse.sisu.plexus-0.0.0.M5.pom (4.8 kB at 268 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/sisu/sisu-plexus/0.0.0.M5/sisu-plexus-0.0.0.M5.pom
+Progress (1): 4.1/13 kBProgress (1): 8.2/13 kBProgress (1): 12/13 kB Progress (1): 13 kB                      Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/sisu/sisu-plexus/0.0.0.M5/sisu-plexus-0.0.0.M5.pom (13 kB at 695 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/sisu/org.eclipse.sisu.inject/0.0.0.M5/org.eclipse.sisu.inject-0.0.0.M5.pom
+Progress (1): 2.5 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/sisu/org.eclipse.sisu.inject/0.0.0.M5/org.eclipse.sisu.inject-0.0.0.M5.pom (2.5 kB at 72 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/sisu/sisu-inject/0.0.0.M5/sisu-inject-0.0.0.M5.pom
+Progress (1): 4.1/14 kBProgress (1): 8.2/14 kBProgress (1): 12/14 kB Progress (1): 14 kB                      Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/sisu/sisu-inject/0.0.0.M5/sisu-inject-0.0.0.M5.pom (14 kB at 737 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-model-builder/3.1.1/maven-model-builder-3.1.1.pom
+Progress (1): 2.8 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-model-builder/3.1.1/maven-model-builder-3.1.1.pom (2.8 kB at 176 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-aether-provider/3.1.1/maven-aether-provider-3.1.1.pom
+Progress (1): 4.1 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-aether-provider/3.1.1/maven-aether-provider-3.1.1.pom (4.1 kB at 256 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-compress/1.20/commons-compress-1.20.pom
+Progress (1): 4.1/18 kBProgress (1): 8.2/18 kBProgress (1): 12/18 kB Progress (1): 16/18 kBProgress (1): 18 kB                      Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-compress/1.20/commons-compress-1.20.pom (18 kB at 554 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-parent/48/commons-parent-48.pom
+Progress (1): 4.1/72 kBProgress (1): 8.2/72 kBProgress (1): 12/72 kB Progress (1): 16/72 kBProgress (1): 20/72 kBProgress (1): 25/72 kBProgress (1): 29/72 kBProgress (1): 33/72 kBProgress (1): 37/72 kBProgress (1): 41/72 kBProgress (1): 45/72 kBProgress (1): 49/72 kBProgress (1): 53/72 kBProgress (1): 57/72 kBProgress (1): 61/72 kBProgress (1): 66/72 kBProgress (1): 70/72 kBProgress (1): 72 kB                      Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-parent/48/commons-parent-48.pom (72 kB at 3.3 MB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-archiver/4.2.7/plexus-archiver-4.2.7.pom
+Progress (1): 4.1/4.9 kBProgress (1): 4.9 kB                        Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-archiver/4.2.7/plexus-archiver-4.2.7.pom (4.9 kB at 307 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-io/3.2.0/plexus-io-3.2.0.pom
+Progress (1): 4.1/4.5 kBProgress (1): 4.5 kB                        Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-io/3.2.0/plexus-io-3.2.0.pom (4.5 kB at 267 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/3.3.1/plexus-utils-3.3.1.pom
+Progress (1): 4.1/5.3 kBProgress (1): 5.3 kB                        Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/3.3.1/plexus-utils-3.3.1.pom (5.3 kB at 356 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/file-management/3.0.0/file-management-3.0.0.jar
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-io/3.0.0/maven-shared-io-3.0.0.jar
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-compat/3.0/maven-compat-3.0.jar
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/wagon/wagon-provider-api/2.10/wagon-provider-api-2.10.jar
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-archiver/3.5.2/maven-archiver-3.5.2.jar
+Progress (1): 4.1/35 kBProgress (1): 8.2/35 kBProgress (1): 12/35 kB Progress (1): 16/35 kBProgress (1): 20/35 kBProgress (1): 25/35 kBProgress (1): 29/35 kBProgress (1): 33/35 kBProgress (1): 35 kB                      Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/file-management/3.0.0/file-management-3.0.0.jar (35 kB at 1.8 MB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-compress/1.20/commons-compress-1.20.jar
+Progress (1): 4.1/632 kBProgress (1): 8.2/632 kBProgress (1): 12/632 kB Progress (1): 16/632 kBProgress (1): 20/632 kBProgress (1): 25/632 kBProgress (1): 29/632 kBProgress (1): 33/632 kBProgress (1): 37/632 kBProgress (1): 41/632 kBProgress (1): 45/632 kBProgress (1): 49/632 kBProgress (1): 53/632 kBProgress (1): 57/632 kBProgress (1): 61/632 kBProgress (1): 66/632 kBProgress (1): 70/632 kBProgress (1): 74/632 kBProgress (1): 78/632 kBProgress (1): 82/632 kBProgress (1): 86/632 kBProgress (1): 90/632 kBProgress (1): 94/632 kBProgress (1): 98/632 kBProgress (1): 102/632 kBProgress (1): 106/632 kBProgress (1): 111/632 kBProgress (1): 115/632 kBProgress (1): 119/632 kBProgress (1): 123/632 kBProgress (1): 127/632 kBProgress (1): 131/632 kBProgress (1): 135/632 kBProgress (1): 139/632 kBProgress (1): 143/632 kBProgress (2): 143/632 kB | 2.8/41 kBProgress (2): 147/632 kB | 2.8/41 kBProgress (2): 152/632 kB | 2.8/41 kBProgress (2): 156/632 kB | 2.8/41 kBProgress (2): 160/632 kB | 2.8/41 kBProgress (2): 160/632 kB | 5.5/41 kBProgress (2): 164/632 kB | 5.5/41 kBProgress (2): 168/632 kB | 5.5/41 kBProgress (2): 172/632 kB | 5.5/41 kBProgress (2): 176/632 kB | 5.5/41 kBProgress (2): 176/632 kB | 8.3/41 kBProgress (2): 176/632 kB | 11/41 kB Progress (2): 176/632 kB | 14/41 kBProgress (2): 176/632 kB | 17/41 kBProgress (2): 176/632 kB | 19/41 kBProgress (2): 176/632 kB | 22/41 kBProgress (2): 176/632 kB | 25/41 kBProgress (2): 176/632 kB | 28/41 kBProgress (2): 176/632 kB | 30/41 kBProgress (2): 176/632 kB | 33/41 kBProgress (2): 176/632 kB | 36/41 kBProgress (2): 176/632 kB | 39/41 kBProgress (2): 176/632 kB | 41/41 kBProgress (2): 176/632 kB | 41 kB   Progress (2): 180/632 kB | 41 kBProgress (2): 184/632 kB | 41 kBProgress (2): 188/632 kB | 41 kBProgress (2): 193/632 kB | 41 kBProgress (2): 197/632 kB | 41 kBProgress (2): 201/632 kB | 41 kBProgress (2): 205/632 kB | 41 kBProgress (2): 209/632 kB | 41 kBProgress (2): 213/632 kB | 41 kBProgress (2): 217/632 kB | 41 kBProgress (2): 221/632 kB | 41 kBProgress (2): 225/632 kB | 41 kBProgress (2): 229/632 kB | 41 kBProgress (2): 233/632 kB | 41 kBProgress (2): 238/632 kB | 41 kBProgress (2): 242/632 kB | 41 kBProgress (2): 246/632 kB | 41 kBProgress (2): 250/632 kB | 41 kBProgress (2): 254/632 kB | 41 kBProgress (2): 258/632 kB | 41 kBProgress (2): 262/632 kB | 41 kBProgress (2): 266/632 kB | 41 kBProgress (2): 270/632 kB | 41 kBProgress (2): 274/632 kB | 41 kBProgress (2): 279/632 kB | 41 kBProgress (2): 283/632 kB | 41 kBProgress (3): 283/632 kB | 41 kB | 2.8/54 kBProgress (3): 287/632 kB | 41 kB | 2.8/54 kBProgress (3): 291/632 kB | 41 kB | 2.8/54 kBProgress (3): 291/632 kB | 41 kB | 5.5/54 kBProgress (3): 291/632 kB | 41 kB | 8.3/54 kBProgress (3): 291/632 kB | 41 kB | 11/54 kB Progress (3): 291/632 kB | 41 kB | 14/54 kBProgress (3): 291/632 kB | 41 kB | 17/54 kBProgress (3): 291/632 kB | 41 kB | 19/54 kBProgress (3): 291/632 kB | 41 kB | 22/54 kBProgress (3): 291/632 kB | 41 kB | 25/54 kBProgress (3): 291/632 kB | 41 kB | 28/54 kBProgress (3): 291/632 kB | 41 kB | 30/54 kB                                           Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-io/3.0.0/maven-shared-io-3.0.0.jar (41 kB at 638 kB/s)
+Progress (3): 291/632 kB | 30/54 kB | 2.8/26 kBProgress (3): 291/632 kB | 33/54 kB | 2.8/26 kBProgress (3): 291/632 kB | 36/54 kB | 2.8/26 kBProgress (3): 291/632 kB | 39/54 kB | 2.8/26 kBProgress (3): 295/632 kB | 39/54 kB | 2.8/26 kBProgress (3): 295/632 kB | 39/54 kB | 5.5/26 kB                                               Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-archiver/4.2.7/plexus-archiver-4.2.7.jar
+Progress (3): 295/632 kB | 39/54 kB | 8.3/26 kBProgress (3): 295/632 kB | 39/54 kB | 11/26 kB Progress (3): 295/632 kB | 39/54 kB | 14/26 kBProgress (3): 295/632 kB | 39/54 kB | 17/26 kBProgress (3): 295/632 kB | 39/54 kB | 19/26 kBProgress (3): 295/632 kB | 39/54 kB | 22/26 kBProgress (3): 295/632 kB | 39/54 kB | 25/26 kBProgress (3): 295/632 kB | 39/54 kB | 26 kB   Progress (3): 299/632 kB | 39/54 kB | 26 kBProgress (4): 299/632 kB | 39/54 kB | 26 kB | 2.8/285 kBProgress (4): 303/632 kB | 39/54 kB | 26 kB | 2.8/285 kBProgress (4): 303/632 kB | 41/54 kB | 26 kB | 2.8/285 kBProgress (4): 303/632 kB | 44/54 kB | 26 kB | 2.8/285 kBProgress (4): 303/632 kB | 47/54 kB | 26 kB | 2.8/285 kBProgress (4): 303/632 kB | 50/54 kB | 26 kB | 2.8/285 kBProgress (4): 303/632 kB | 52/54 kB | 26 kB | 2.8/285 kBProgress (4): 303/632 kB | 54 kB | 26 kB | 2.8/285 kB   Progress (4): 307/632 kB | 54 kB | 26 kB | 2.8/285 kB                                                     Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-archiver/3.5.2/maven-archiver-3.5.2.jar (26 kB at 311 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-io/3.2.0/plexus-io-3.2.0.jar
+Progress (4): 307/632 kB | 54 kB | 2.8/285 kB | 4.1/195 kBProgress (4): 307/632 kB | 54 kB | 2.8/285 kB | 8.2/195 kBProgress (4): 307/632 kB | 54 kB | 2.8/285 kB | 12/195 kB Progress (4): 307/632 kB | 54 kB | 2.8/285 kB | 16/195 kBProgress (4): 307/632 kB | 54 kB | 2.8/285 kB | 20/195 kBProgress (4): 307/632 kB | 54 kB | 2.8/285 kB | 25/195 kBProgress (4): 307/632 kB | 54 kB | 2.8/285 kB | 29/195 kBProgress (4): 307/632 kB | 54 kB | 5.5/285 kB | 29/195 kBProgress (4): 307/632 kB | 54 kB | 8.3/285 kB | 29/195 kBProgress (4): 307/632 kB | 54 kB | 11/285 kB | 29/195 kB Progress (4): 307/632 kB | 54 kB | 14/285 kB | 29/195 kBProgress (4): 307/632 kB | 54 kB | 18/285 kB | 29/195 kBProgress (4): 307/632 kB | 54 kB | 22/285 kB | 29/195 kBProgress (4): 307/632 kB | 54 kB | 26/285 kB | 29/195 kBProgress (4): 307/632 kB | 54 kB | 30/285 kB | 29/195 kBProgress (4): 307/632 kB | 54 kB | 34/285 kB | 29/195 kBProgress (4): 307/632 kB | 54 kB | 38/285 kB | 29/195 kBProgress (4): 307/632 kB | 54 kB | 42/285 kB | 29/195 kBProgress (4): 307/632 kB | 54 kB | 47/285 kB | 29/195 kBProgress (4): 307/632 kB | 54 kB | 51/285 kB | 29/195 kBProgress (4): 307/632 kB | 54 kB | 55/285 kB | 29/195 kBProgress (4): 307/632 kB | 54 kB | 59/285 kB | 29/195 kBProgress (4): 307/632 kB | 54 kB | 63/285 kB | 29/195 kBProgress (4): 307/632 kB | 54 kB | 67/285 kB | 29/195 kBProgress (4): 307/632 kB | 54 kB | 71/285 kB | 29/195 kBProgress (4): 307/632 kB | 54 kB | 75/285 kB | 29/195 kBProgress (4): 307/632 kB | 54 kB | 79/285 kB | 29/195 kBProgress (4): 307/632 kB | 54 kB | 83/285 kB | 29/195 kBProgress (4): 307/632 kB | 54 kB | 88/285 kB | 29/195 kBProgress (4): 307/632 kB | 54 kB | 92/285 kB | 29/195 kBProgress (4): 307/632 kB | 54 kB | 96/285 kB | 29/195 kBProgress (4): 307/632 kB | 54 kB | 96/285 kB | 33/195 kBProgress (4): 307/632 kB | 54 kB | 96/285 kB | 37/195 kBProgress (4): 307/632 kB | 54 kB | 96/285 kB | 41/195 kBProgress (4): 307/632 kB | 54 kB | 96/285 kB | 45/195 kBProgress (4): 307/632 kB | 54 kB | 96/285 kB | 49/195 kBProgress (4): 307/632 kB | 54 kB | 96/285 kB | 53/195 kBProgress (4): 307/632 kB | 54 kB | 96/285 kB | 57/195 kBProgress (4): 307/632 kB | 54 kB | 96/285 kB | 61/195 kBProgress (4): 307/632 kB | 54 kB | 96/285 kB | 66/195 kBProgress (4): 307/632 kB | 54 kB | 96/285 kB | 70/195 kBProgress (5): 307/632 kB | 54 kB | 96/285 kB | 70/195 kB | 4.1/76 kB                                                                    Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/wagon/wagon-provider-api/2.10/wagon-provider-api-2.10.jar (54 kB at 552 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/3.3.1/plexus-utils-3.3.1.jar
+Progress (4): 311/632 kB | 96/285 kB | 70/195 kB | 4.1/76 kBProgress (4): 311/632 kB | 96/285 kB | 70/195 kB | 8.2/76 kBProgress (4): 311/632 kB | 96/285 kB | 70/195 kB | 12/76 kB Progress (4): 311/632 kB | 96/285 kB | 70/195 kB | 16/76 kBProgress (4): 311/632 kB | 96/285 kB | 70/195 kB | 20/76 kBProgress (4): 311/632 kB | 96/285 kB | 70/195 kB | 25/76 kBProgress (4): 311/632 kB | 100/285 kB | 70/195 kB | 25/76 kBProgress (4): 311/632 kB | 100/285 kB | 74/195 kB | 25/76 kBProgress (4): 315/632 kB | 100/285 kB | 74/195 kB | 25/76 kBProgress (4): 315/632 kB | 100/285 kB | 78/195 kB | 25/76 kBProgress (4): 315/632 kB | 100/285 kB | 82/195 kB | 25/76 kBProgress (4): 319/632 kB | 100/285 kB | 82/195 kB | 25/76 kBProgress (4): 319/632 kB | 100/285 kB | 82/195 kB | 29/76 kBProgress (4): 319/632 kB | 100/285 kB | 82/195 kB | 33/76 kBProgress (4): 319/632 kB | 100/285 kB | 82/195 kB | 37/76 kBProgress (4): 319/632 kB | 100/285 kB | 82/195 kB | 41/76 kBProgress (4): 319/632 kB | 100/285 kB | 82/195 kB | 45/76 kBProgress (4): 319/632 kB | 100/285 kB | 82/195 kB | 49/76 kBProgress (4): 319/632 kB | 104/285 kB | 82/195 kB | 49/76 kBProgress (4): 319/632 kB | 104/285 kB | 86/195 kB | 49/76 kBProgress (4): 319/632 kB | 104/285 kB | 90/195 kB | 49/76 kBProgress (4): 319/632 kB | 104/285 kB | 94/195 kB | 49/76 kBProgress (4): 319/632 kB | 104/285 kB | 98/195 kB | 49/76 kBProgress (4): 319/632 kB | 104/285 kB | 102/195 kB | 49/76 kBProgress (4): 319/632 kB | 104/285 kB | 106/195 kB | 49/76 kBProgress (4): 319/632 kB | 104/285 kB | 111/195 kB | 49/76 kBProgress (4): 319/632 kB | 104/285 kB | 115/195 kB | 49/76 kBProgress (4): 319/632 kB | 104/285 kB | 119/195 kB | 49/76 kBProgress (4): 319/632 kB | 104/285 kB | 123/195 kB | 49/76 kBProgress (4): 319/632 kB | 104/285 kB | 127/195 kB | 49/76 kBProgress (4): 319/632 kB | 104/285 kB | 131/195 kB | 49/76 kBProgress (4): 319/632 kB | 104/285 kB | 135/195 kB | 49/76 kBProgress (4): 319/632 kB | 104/285 kB | 139/195 kB | 49/76 kBProgress (4): 319/632 kB | 104/285 kB | 143/195 kB | 49/76 kBProgress (4): 319/632 kB | 104/285 kB | 147/195 kB | 49/76 kBProgress (5): 319/632 kB | 104/285 kB | 147/195 kB | 49/76 kB | 4.1/262 kBProgress (5): 319/632 kB | 104/285 kB | 147/195 kB | 49/76 kB | 8.2/262 kBProgress (5): 319/632 kB | 104/285 kB | 147/195 kB | 49/76 kB | 12/262 kB Progress (5): 319/632 kB | 104/285 kB | 147/195 kB | 49/76 kB | 16/262 kBProgress (5): 319/632 kB | 104/285 kB | 147/195 kB | 53/76 kB | 16/262 kBProgress (5): 319/632 kB | 104/285 kB | 152/195 kB | 53/76 kB | 16/262 kBProgress (5): 324/632 kB | 104/285 kB | 152/195 kB | 53/76 kB | 16/262 kBProgress (5): 324/632 kB | 108/285 kB | 152/195 kB | 53/76 kB | 16/262 kBProgress (5): 324/632 kB | 112/285 kB | 152/195 kB | 53/76 kB | 16/262 kBProgress (5): 324/632 kB | 116/285 kB | 152/195 kB | 53/76 kB | 16/262 kBProgress (5): 324/632 kB | 120/285 kB | 152/195 kB | 53/76 kB | 16/262 kBProgress (5): 324/632 kB | 124/285 kB | 152/195 kB | 53/76 kB | 16/262 kBProgress (5): 324/632 kB | 128/285 kB | 152/195 kB | 53/76 kB | 16/262 kBProgress (5): 324/632 kB | 128/285 kB | 152/195 kB | 53/76 kB | 20/262 kBProgress (5): 324/632 kB | 128/285 kB | 156/195 kB | 53/76 kB | 20/262 kBProgress (5): 324/632 kB | 128/285 kB | 156/195 kB | 57/76 kB | 20/262 kBProgress (5): 324/632 kB | 128/285 kB | 160/195 kB | 57/76 kB | 20/262 kBProgress (5): 324/632 kB | 133/285 kB | 160/195 kB | 57/76 kB | 20/262 kBProgress (5): 324/632 kB | 137/285 kB | 160/195 kB | 57/76 kB | 20/262 kBProgress (5): 324/632 kB | 141/285 kB | 160/195 kB | 57/76 kB | 20/262 kBProgress (5): 324/632 kB | 145/285 kB | 160/195 kB | 57/76 kB | 20/262 kBProgress (5): 324/632 kB | 145/285 kB | 160/195 kB | 57/76 kB | 25/262 kBProgress (5): 324/632 kB | 145/285 kB | 160/195 kB | 57/76 kB | 29/262 kBProgress (5): 324/632 kB | 145/285 kB | 160/195 kB | 57/76 kB | 33/262 kBProgress (5): 328/632 kB | 145/285 kB | 160/195 kB | 57/76 kB | 33/262 kBProgress (5): 328/632 kB | 145/285 kB | 164/195 kB | 57/76 kB | 33/262 kBProgress (5): 328/632 kB | 145/285 kB | 164/195 kB | 61/76 kB | 33/262 kBProgress (5): 328/632 kB | 145/285 kB | 168/195 kB | 61/76 kB | 33/262 kBProgress (5): 328/632 kB | 149/285 kB | 168/195 kB | 61/76 kB | 33/262 kBProgress (5): 328/632 kB | 153/285 kB | 168/195 kB | 61/76 kB | 33/262 kBProgress (5): 328/632 kB | 157/285 kB | 168/195 kB | 61/76 kB | 33/262 kBProgress (5): 328/632 kB | 161/285 kB | 168/195 kB | 61/76 kB | 33/262 kBProgress (5): 328/632 kB | 161/285 kB | 168/195 kB | 61/76 kB | 37/262 kBProgress (5): 328/632 kB | 161/285 kB | 168/195 kB | 61/76 kB | 41/262 kBProgress (5): 328/632 kB | 161/285 kB | 168/195 kB | 61/76 kB | 45/262 kBProgress (5): 328/632 kB | 161/285 kB | 168/195 kB | 61/76 kB | 49/262 kBProgress (5): 332/632 kB | 161/285 kB | 168/195 kB | 61/76 kB | 49/262 kBProgress (5): 336/632 kB | 161/285 kB | 168/195 kB | 61/76 kB | 49/262 kBProgress (5): 340/632 kB | 161/285 kB | 168/195 kB | 61/76 kB | 49/262 kBProgress (5): 344/632 kB | 161/285 kB | 168/195 kB | 61/76 kB | 49/262 kBProgress (5): 348/632 kB | 161/285 kB | 168/195 kB | 61/76 kB | 49/262 kBProgress (5): 352/632 kB | 161/285 kB | 168/195 kB | 61/76 kB | 49/262 kBProgress (5): 356/632 kB | 161/285 kB | 168/195 kB | 61/76 kB | 49/262 kBProgress (5): 360/632 kB | 161/285 kB | 168/195 kB | 61/76 kB | 49/262 kBProgress (5): 365/632 kB | 161/285 kB | 168/195 kB | 61/76 kB | 49/262 kBProgress (5): 369/632 kB | 161/285 kB | 168/195 kB | 61/76 kB | 49/262 kBProgress (5): 373/632 kB | 161/285 kB | 168/195 kB | 61/76 kB | 49/262 kBProgress (5): 373/632 kB | 165/285 kB | 168/195 kB | 61/76 kB | 49/262 kBProgress (5): 373/632 kB | 165/285 kB | 172/195 kB | 61/76 kB | 49/262 kBProgress (5): 373/632 kB | 165/285 kB | 172/195 kB | 64/76 kB | 49/262 kBProgress (5): 373/632 kB | 165/285 kB | 176/195 kB | 64/76 kB | 49/262 kBProgress (5): 373/632 kB | 165/285 kB | 180/195 kB | 64/76 kB | 49/262 kBProgress (5): 377/632 kB | 165/285 kB | 180/195 kB | 64/76 kB | 49/262 kBProgress (5): 381/632 kB | 165/285 kB | 180/195 kB | 64/76 kB | 49/262 kBProgress (5): 385/632 kB | 165/285 kB | 180/195 kB | 64/76 kB | 49/262 kBProgress (5): 389/632 kB | 165/285 kB | 180/195 kB | 64/76 kB | 49/262 kBProgress (5): 393/632 kB | 165/285 kB | 180/195 kB | 64/76 kB | 49/262 kBProgress (5): 397/632 kB | 165/285 kB | 180/195 kB | 64/76 kB | 49/262 kBProgress (5): 401/632 kB | 165/285 kB | 180/195 kB | 64/76 kB | 49/262 kBProgress (5): 406/632 kB | 165/285 kB | 180/195 kB | 64/76 kB | 49/262 kBProgress (5): 410/632 kB | 165/285 kB | 180/195 kB | 64/76 kB | 49/262 kBProgress (5): 414/632 kB | 165/285 kB | 180/195 kB | 64/76 kB | 49/262 kBProgress (5): 418/632 kB | 165/285 kB | 180/195 kB | 64/76 kB | 49/262 kBProgress (5): 422/632 kB | 165/285 kB | 180/195 kB | 64/76 kB | 49/262 kBProgress (5): 426/632 kB | 165/285 kB | 180/195 kB | 64/76 kB | 49/262 kBProgress (5): 430/632 kB | 165/285 kB | 180/195 kB | 64/76 kB | 49/262 kBProgress (5): 434/632 kB | 165/285 kB | 180/195 kB | 64/76 kB | 49/262 kBProgress (5): 438/632 kB | 165/285 kB | 180/195 kB | 64/76 kB | 49/262 kBProgress (5): 442/632 kB | 165/285 kB | 180/195 kB | 64/76 kB | 49/262 kBProgress (5): 446/632 kB | 165/285 kB | 180/195 kB | 64/76 kB | 49/262 kBProgress (5): 451/632 kB | 165/285 kB | 180/195 kB | 64/76 kB | 49/262 kBProgress (5): 455/632 kB | 165/285 kB | 180/195 kB | 64/76 kB | 49/262 kBProgress (5): 459/632 kB | 165/285 kB | 180/195 kB | 64/76 kB | 49/262 kBProgress (5): 463/632 kB | 165/285 kB | 180/195 kB | 64/76 kB | 49/262 kBProgress (5): 467/632 kB | 165/285 kB | 180/195 kB | 64/76 kB | 49/262 kBProgress (5): 471/632 kB | 165/285 kB | 180/195 kB | 64/76 kB | 49/262 kBProgress (5): 475/632 kB | 165/285 kB | 180/195 kB | 64/76 kB | 49/262 kBProgress (5): 479/632 kB | 165/285 kB | 180/195 kB | 64/76 kB | 49/262 kBProgress (5): 483/632 kB | 165/285 kB | 180/195 kB | 64/76 kB | 49/262 kBProgress (5): 487/632 kB | 165/285 kB | 180/195 kB | 64/76 kB | 49/262 kBProgress (5): 487/632 kB | 169/285 kB | 180/195 kB | 64/76 kB | 49/262 kBProgress (5): 487/632 kB | 174/285 kB | 180/195 kB | 64/76 kB | 49/262 kBProgress (5): 487/632 kB | 178/285 kB | 180/195 kB | 64/76 kB | 49/262 kBProgress (5): 487/632 kB | 182/285 kB | 180/195 kB | 64/76 kB | 49/262 kBProgress (5): 487/632 kB | 186/285 kB | 180/195 kB | 64/76 kB | 49/262 kBProgress (5): 487/632 kB | 190/285 kB | 180/195 kB | 64/76 kB | 49/262 kBProgress (5): 487/632 kB | 194/285 kB | 180/195 kB | 64/76 kB | 49/262 kBProgress (5): 487/632 kB | 198/285 kB | 180/195 kB | 64/76 kB | 49/262 kBProgress (5): 487/632 kB | 202/285 kB | 180/195 kB | 64/76 kB | 49/262 kBProgress (5): 487/632 kB | 206/285 kB | 180/195 kB | 64/76 kB | 49/262 kBProgress (5): 487/632 kB | 210/285 kB | 180/195 kB | 64/76 kB | 49/262 kBProgress (5): 487/632 kB | 214/285 kB | 180/195 kB | 64/76 kB | 49/262 kBProgress (5): 487/632 kB | 219/285 kB | 180/195 kB | 64/76 kB | 49/262 kBProgress (5): 487/632 kB | 223/285 kB | 180/195 kB | 64/76 kB | 49/262 kBProgress (5): 487/632 kB | 227/285 kB | 180/195 kB | 64/76 kB | 49/262 kBProgress (5): 487/632 kB | 227/285 kB | 180/195 kB | 64/76 kB | 53/262 kBProgress (5): 487/632 kB | 227/285 kB | 184/195 kB | 64/76 kB | 53/262 kBProgress (5): 487/632 kB | 227/285 kB | 184/195 kB | 68/76 kB | 53/262 kBProgress (5): 487/632 kB | 227/285 kB | 188/195 kB | 68/76 kB | 53/262 kBProgress (5): 487/632 kB | 227/285 kB | 193/195 kB | 68/76 kB | 53/262 kBProgress (5): 487/632 kB | 227/285 kB | 195 kB | 68/76 kB | 53/262 kB    Progress (5): 487/632 kB | 227/285 kB | 195 kB | 68/76 kB | 57/262 kBProgress (5): 487/632 kB | 227/285 kB | 195 kB | 68/76 kB | 61/262 kBProgress (5): 487/632 kB | 227/285 kB | 195 kB | 68/76 kB | 66/262 kBProgress (5): 487/632 kB | 227/285 kB | 195 kB | 68/76 kB | 70/262 kBProgress (5): 487/632 kB | 227/285 kB | 195 kB | 68/76 kB | 74/262 kBProgress (5): 487/632 kB | 227/285 kB | 195 kB | 68/76 kB | 78/262 kBProgress (5): 487/632 kB | 227/285 kB | 195 kB | 68/76 kB | 82/262 kBProgress (5): 487/632 kB | 227/285 kB | 195 kB | 68/76 kB | 86/262 kBProgress (5): 487/632 kB | 227/285 kB | 195 kB | 68/76 kB | 90/262 kBProgress (5): 487/632 kB | 227/285 kB | 195 kB | 68/76 kB | 94/262 kBProgress (5): 487/632 kB | 227/285 kB | 195 kB | 68/76 kB | 98/262 kBProgress (5): 487/632 kB | 227/285 kB | 195 kB | 68/76 kB | 102/262 kBProgress (5): 487/632 kB | 227/285 kB | 195 kB | 68/76 kB | 106/262 kBProgress (5): 487/632 kB | 227/285 kB | 195 kB | 68/76 kB | 111/262 kBProgress (5): 487/632 kB | 227/285 kB | 195 kB | 68/76 kB | 115/262 kBProgress (5): 487/632 kB | 227/285 kB | 195 kB | 68/76 kB | 119/262 kBProgress (5): 487/632 kB | 227/285 kB | 195 kB | 68/76 kB | 123/262 kBProgress (5): 487/632 kB | 227/285 kB | 195 kB | 68/76 kB | 127/262 kBProgress (5): 487/632 kB | 227/285 kB | 195 kB | 68/76 kB | 131/262 kBProgress (5): 487/632 kB | 227/285 kB | 195 kB | 68/76 kB | 135/262 kBProgress (5): 487/632 kB | 227/285 kB | 195 kB | 68/76 kB | 139/262 kBProgress (5): 487/632 kB | 227/285 kB | 195 kB | 68/76 kB | 143/262 kBProgress (5): 487/632 kB | 227/285 kB | 195 kB | 68/76 kB | 147/262 kBProgress (5): 487/632 kB | 227/285 kB | 195 kB | 68/76 kB | 152/262 kBProgress (5): 487/632 kB | 227/285 kB | 195 kB | 68/76 kB | 156/262 kBProgress (5): 487/632 kB | 227/285 kB | 195 kB | 68/76 kB | 160/262 kBProgress (5): 487/632 kB | 227/285 kB | 195 kB | 68/76 kB | 164/262 kBProgress (5): 487/632 kB | 227/285 kB | 195 kB | 68/76 kB | 168/262 kBProgress (5): 487/632 kB | 227/285 kB | 195 kB | 68/76 kB | 172/262 kBProgress (5): 487/632 kB | 227/285 kB | 195 kB | 68/76 kB | 176/262 kBProgress (5): 487/632 kB | 227/285 kB | 195 kB | 68/76 kB | 180/262 kBProgress (5): 487/632 kB | 227/285 kB | 195 kB | 68/76 kB | 184/262 kBProgress (5): 487/632 kB | 227/285 kB | 195 kB | 68/76 kB | 188/262 kBProgress (5): 487/632 kB | 227/285 kB | 195 kB | 68/76 kB | 193/262 kBProgress (5): 487/632 kB | 227/285 kB | 195 kB | 68/76 kB | 197/262 kBProgress (5): 487/632 kB | 227/285 kB | 195 kB | 68/76 kB | 201/262 kBProgress (5): 487/632 kB | 227/285 kB | 195 kB | 68/76 kB | 205/262 kBProgress (5): 487/632 kB | 227/285 kB | 195 kB | 68/76 kB | 209/262 kBProgress (5): 487/632 kB | 231/285 kB | 195 kB | 68/76 kB | 209/262 kBProgress (5): 487/632 kB | 231/285 kB | 195 kB | 72/76 kB | 209/262 kBProgress (5): 487/632 kB | 231/285 kB | 195 kB | 76 kB | 209/262 kB   Progress (5): 487/632 kB | 235/285 kB | 195 kB | 76 kB | 209/262 kB                                                                   Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-archiver/4.2.7/plexus-archiver-4.2.7.jar (195 kB at 1.4 MB/s)
+Progress (4): 492/632 kB | 235/285 kB | 76 kB | 209/262 kBProgress (4): 496/632 kB | 235/285 kB | 76 kB | 209/262 kBProgress (4): 500/632 kB | 235/285 kB | 76 kB | 209/262 kBProgress (4): 504/632 kB | 235/285 kB | 76 kB | 209/262 kBProgress (4): 504/632 kB | 239/285 kB | 76 kB | 209/262 kBProgress (4): 508/632 kB | 239/285 kB | 76 kB | 209/262 kBProgress (4): 512/632 kB | 239/285 kB | 76 kB | 209/262 kBProgress (4): 516/632 kB | 239/285 kB | 76 kB | 209/262 kBProgress (4): 520/632 kB | 239/285 kB | 76 kB | 209/262 kBProgress (4): 520/632 kB | 243/285 kB | 76 kB | 209/262 kBProgress (4): 520/632 kB | 247/285 kB | 76 kB | 209/262 kBProgress (4): 520/632 kB | 251/285 kB | 76 kB | 209/262 kBProgress (4): 520/632 kB | 255/285 kB | 76 kB | 209/262 kBProgress (4): 520/632 kB | 260/285 kB | 76 kB | 209/262 kBProgress (4): 520/632 kB | 264/285 kB | 76 kB | 209/262 kBProgress (4): 520/632 kB | 268/285 kB | 76 kB | 209/262 kBProgress (4): 520/632 kB | 272/285 kB | 76 kB | 209/262 kBProgress (4): 520/632 kB | 276/285 kB | 76 kB | 209/262 kBProgress (4): 520/632 kB | 280/285 kB | 76 kB | 209/262 kBProgress (4): 520/632 kB | 284/285 kB | 76 kB | 209/262 kBProgress (4): 520/632 kB | 285 kB | 76 kB | 209/262 kB    Progress (4): 524/632 kB | 285 kB | 76 kB | 209/262 kBProgress (4): 528/632 kB | 285 kB | 76 kB | 209/262 kBProgress (4): 532/632 kB | 285 kB | 76 kB | 209/262 kBProgress (4): 537/632 kB | 285 kB | 76 kB | 209/262 kBProgress (4): 537/632 kB | 285 kB | 76 kB | 213/262 kBProgress (4): 541/632 kB | 285 kB | 76 kB | 213/262 kBProgress (4): 545/632 kB | 285 kB | 76 kB | 213/262 kBProgress (4): 549/632 kB | 285 kB | 76 kB | 213/262 kBProgress (4): 553/632 kB | 285 kB | 76 kB | 213/262 kBProgress (4): 553/632 kB | 285 kB | 76 kB | 217/262 kBProgress (4): 557/632 kB | 285 kB | 76 kB | 217/262 kB                                                      Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-io/3.2.0/plexus-io-3.2.0.jar (76 kB at 507 kB/s)
+Progress (3): 561/632 kB | 285 kB | 217/262 kBProgress (3): 565/632 kB | 285 kB | 217/262 kBProgress (3): 569/632 kB | 285 kB | 217/262 kBProgress (3): 569/632 kB | 285 kB | 221/262 kBProgress (3): 569/632 kB | 285 kB | 225/262 kBProgress (3): 573/632 kB | 285 kB | 225/262 kBProgress (3): 578/632 kB | 285 kB | 225/262 kBProgress (3): 578/632 kB | 285 kB | 229/262 kBProgress (3): 582/632 kB | 285 kB | 229/262 kBProgress (3): 586/632 kB | 285 kB | 229/262 kBProgress (3): 586/632 kB | 285 kB | 233/262 kBProgress (3): 586/632 kB | 285 kB | 238/262 kBProgress (3): 590/632 kB | 285 kB | 238/262 kBProgress (3): 594/632 kB | 285 kB | 238/262 kBProgress (3): 598/632 kB | 285 kB | 238/262 kBProgress (3): 602/632 kB | 285 kB | 238/262 kBProgress (3): 602/632 kB | 285 kB | 242/262 kBProgress (3): 602/632 kB | 285 kB | 246/262 kBProgress (3): 602/632 kB | 285 kB | 250/262 kBProgress (3): 602/632 kB | 285 kB | 254/262 kBProgress (3): 602/632 kB | 285 kB | 258/262 kBProgress (3): 602/632 kB | 285 kB | 262 kB    Progress (3): 606/632 kB | 285 kB | 262 kBProgress (3): 610/632 kB | 285 kB | 262 kBProgress (3): 614/632 kB | 285 kB | 262 kBProgress (3): 618/632 kB | 285 kB | 262 kBProgress (3): 623/632 kB | 285 kB | 262 kBProgress (3): 627/632 kB | 285 kB | 262 kBProgress (3): 631/632 kB | 285 kB | 262 kBProgress (3): 632 kB | 285 kB | 262 kB                                          Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-compat/3.0/maven-compat-3.0.jar (285 kB at 1.8 MB/s)
+Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/3.3.1/plexus-utils-3.3.1.jar (262 kB at 1.7 MB/s)
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-compress/1.20/commons-compress-1.20.jar (632 kB at 3.9 MB/s)
+[[1;34mINFO[m] Building jar: /home/developer/Microservices/JavaProjectConfig/Apigetway/demo/target/demo-0.0.1-SNAPSHOT.jar
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mspring-boot-maven-plugin:2.7.7:repackage[m [1m(repackage)[m @ [36mdemo[0;1m ---[m
+[[1;34mINFO[m] Replacing main artifact with repackaged archive
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-install-plugin:2.5.2:install[m [1m(default-install)[m @ [36mdemo[0;1m ---[m
+Downloading from central: https://repo.maven.apache.org/maven2/commons-codec/commons-codec/1.6/commons-codec-1.6.pom
+Progress (1): 4.1/11 kBProgress (1): 8.2/11 kBProgress (1): 11 kB                       Downloaded from central: https://repo.maven.apache.org/maven2/commons-codec/commons-codec/1.6/commons-codec-1.6.pom (11 kB at 744 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-parent/22/commons-parent-22.pom
+Progress (1): 4.1/42 kBProgress (1): 8.2/42 kBProgress (1): 12/42 kB Progress (1): 16/42 kBProgress (1): 20/42 kBProgress (1): 25/42 kBProgress (1): 29/42 kBProgress (1): 33/42 kBProgress (1): 37/42 kBProgress (1): 41/42 kBProgress (1): 42 kB                      Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-parent/22/commons-parent-22.pom (42 kB at 2.6 MB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-utils/0.4/maven-shared-utils-0.4.pom
+Progress (1): 4.0 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-utils/0.4/maven-shared-utils-0.4.pom (4.0 kB at 311 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/commons-codec/commons-codec/1.6/commons-codec-1.6.jar
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-utils/0.4/maven-shared-utils-0.4.jar
+Downloading from central: https://repo.maven.apache.org/maven2/com/google/code/findbugs/jsr305/2.0.1/jsr305-2.0.1.jar
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/3.0.15/plexus-utils-3.0.15.jar
+Progress (1): 4.1/233 kBProgress (1): 8.2/233 kBProgress (1): 12/233 kB Progress (1): 16/233 kBProgress (1): 20/233 kBProgress (1): 25/233 kBProgress (1): 29/233 kBProgress (1): 33/233 kBProgress (2): 33/233 kB | 4.1/155 kBProgress (2): 33/233 kB | 8.2/155 kBProgress (2): 33/233 kB | 12/155 kB Progress (2): 33/233 kB | 16/155 kBProgress (2): 33/233 kB | 20/155 kBProgress (2): 33/233 kB | 25/155 kBProgress (2): 33/233 kB | 29/155 kBProgress (2): 33/233 kB | 33/155 kBProgress (2): 33/233 kB | 37/155 kBProgress (2): 33/233 kB | 41/155 kBProgress (2): 33/233 kB | 45/155 kBProgress (2): 33/233 kB | 49/155 kBProgress (2): 37/233 kB | 49/155 kBProgress (2): 41/233 kB | 49/155 kBProgress (2): 45/233 kB | 49/155 kBProgress (2): 49/233 kB | 49/155 kBProgress (2): 53/233 kB | 49/155 kBProgress (2): 57/233 kB | 49/155 kBProgress (2): 61/233 kB | 49/155 kBProgress (2): 66/233 kB | 49/155 kBProgress (2): 70/233 kB | 49/155 kBProgress (2): 74/233 kB | 49/155 kBProgress (2): 78/233 kB | 49/155 kBProgress (2): 82/233 kB | 49/155 kBProgress (2): 86/233 kB | 49/155 kBProgress (2): 90/233 kB | 49/155 kBProgress (2): 94/233 kB | 49/155 kBProgress (2): 98/233 kB | 49/155 kBProgress (2): 98/233 kB | 53/155 kBProgress (2): 98/233 kB | 57/155 kBProgress (2): 98/233 kB | 61/155 kBProgress (2): 98/233 kB | 66/155 kBProgress (2): 98/233 kB | 70/155 kBProgress (2): 98/233 kB | 74/155 kBProgress (2): 98/233 kB | 78/155 kBProgress (2): 98/233 kB | 82/155 kBProgress (2): 98/233 kB | 86/155 kBProgress (3): 98/233 kB | 86/155 kB | 4.1/32 kBProgress (3): 102/233 kB | 86/155 kB | 4.1/32 kBProgress (3): 106/233 kB | 86/155 kB | 4.1/32 kBProgress (3): 111/233 kB | 86/155 kB | 4.1/32 kBProgress (3): 115/233 kB | 86/155 kB | 4.1/32 kBProgress (3): 119/233 kB | 86/155 kB | 4.1/32 kBProgress (3): 123/233 kB | 86/155 kB | 4.1/32 kBProgress (3): 127/233 kB | 86/155 kB | 4.1/32 kBProgress (3): 131/233 kB | 86/155 kB | 4.1/32 kBProgress (3): 131/233 kB | 90/155 kB | 4.1/32 kBProgress (3): 131/233 kB | 94/155 kB | 4.1/32 kBProgress (3): 131/233 kB | 98/155 kB | 4.1/32 kBProgress (3): 131/233 kB | 102/155 kB | 4.1/32 kBProgress (3): 131/233 kB | 106/155 kB | 4.1/32 kBProgress (3): 131/233 kB | 111/155 kB | 4.1/32 kBProgress (3): 131/233 kB | 115/155 kB | 4.1/32 kBProgress (3): 131/233 kB | 119/155 kB | 4.1/32 kBProgress (3): 131/233 kB | 123/155 kB | 4.1/32 kBProgress (3): 131/233 kB | 127/155 kB | 4.1/32 kBProgress (3): 131/233 kB | 131/155 kB | 4.1/32 kBProgress (3): 131/233 kB | 135/155 kB | 4.1/32 kBProgress (3): 131/233 kB | 139/155 kB | 4.1/32 kBProgress (3): 131/233 kB | 143/155 kB | 4.1/32 kBProgress (3): 131/233 kB | 147/155 kB | 4.1/32 kBProgress (3): 131/233 kB | 152/155 kB | 4.1/32 kBProgress (3): 131/233 kB | 155 kB | 4.1/32 kB    Progress (3): 131/233 kB | 155 kB | 8.2/32 kBProgress (3): 131/233 kB | 155 kB | 12/32 kB Progress (3): 131/233 kB | 155 kB | 16/32 kBProgress (3): 131/233 kB | 155 kB | 20/32 kBProgress (3): 131/233 kB | 155 kB | 25/32 kBProgress (3): 131/233 kB | 155 kB | 29/32 kBProgress (3): 131/233 kB | 155 kB | 32 kB   Progress (3): 135/233 kB | 155 kB | 32 kBProgress (3): 139/233 kB | 155 kB | 32 kBProgress (3): 143/233 kB | 155 kB | 32 kBProgress (3): 147/233 kB | 155 kB | 32 kBProgress (3): 152/233 kB | 155 kB | 32 kBProgress (3): 156/233 kB | 155 kB | 32 kBProgress (3): 160/233 kB | 155 kB | 32 kBProgress (3): 164/233 kB | 155 kB | 32 kBProgress (3): 168/233 kB | 155 kB | 32 kBProgress (3): 172/233 kB | 155 kB | 32 kBProgress (3): 176/233 kB | 155 kB | 32 kBProgress (3): 180/233 kB | 155 kB | 32 kBProgress (3): 184/233 kB | 155 kB | 32 kBProgress (3): 188/233 kB | 155 kB | 32 kBProgress (3): 193/233 kB | 155 kB | 32 kBProgress (3): 197/233 kB | 155 kB | 32 kBProgress (3): 201/233 kB | 155 kB | 32 kBProgress (3): 205/233 kB | 155 kB | 32 kBProgress (3): 209/233 kB | 155 kB | 32 kBProgress (3): 213/233 kB | 155 kB | 32 kBProgress (3): 217/233 kB | 155 kB | 32 kBProgress (3): 221/233 kB | 155 kB | 32 kBProgress (3): 225/233 kB | 155 kB | 32 kBProgress (3): 229/233 kB | 155 kB | 32 kBProgress (3): 233 kB | 155 kB | 32 kB                                         Downloaded from central: https://repo.maven.apache.org/maven2/com/google/code/findbugs/jsr305/2.0.1/jsr305-2.0.1.jar (32 kB at 1.2 MB/s)
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-utils/0.4/maven-shared-utils-0.4.jar (155 kB at 5.6 MB/s)
+Progress (2): 233 kB | 4.1/239 kBProgress (2): 233 kB | 8.2/239 kBProgress (2): 233 kB | 12/239 kB Progress (2): 233 kB | 16/239 kBProgress (2): 233 kB | 20/239 kBProgress (2): 233 kB | 25/239 kBProgress (2): 233 kB | 29/239 kBProgress (2): 233 kB | 33/239 kBProgress (2): 233 kB | 37/239 kBProgress (2): 233 kB | 41/239 kBProgress (2): 233 kB | 45/239 kBProgress (2): 233 kB | 49/239 kBProgress (2): 233 kB | 53/239 kBProgress (2): 233 kB | 57/239 kBProgress (2): 233 kB | 61/239 kBProgress (2): 233 kB | 66/239 kBProgress (2): 233 kB | 70/239 kBProgress (2): 233 kB | 74/239 kBProgress (2): 233 kB | 78/239 kBProgress (2): 233 kB | 82/239 kBProgress (2): 233 kB | 86/239 kBProgress (2): 233 kB | 90/239 kBProgress (2): 233 kB | 94/239 kBProgress (2): 233 kB | 98/239 kBProgress (2): 233 kB | 102/239 kBProgress (2): 233 kB | 106/239 kBProgress (2): 233 kB | 111/239 kBProgress (2): 233 kB | 115/239 kBProgress (2): 233 kB | 119/239 kBProgress (2): 233 kB | 123/239 kBProgress (2): 233 kB | 127/239 kBProgress (2): 233 kB | 131/239 kBProgress (2): 233 kB | 135/239 kBProgress (2): 233 kB | 139/239 kBProgress (2): 233 kB | 143/239 kBProgress (2): 233 kB | 147/239 kBProgress (2): 233 kB | 152/239 kBProgress (2): 233 kB | 156/239 kBProgress (2): 233 kB | 160/239 kBProgress (2): 233 kB | 164/239 kBProgress (2): 233 kB | 168/239 kBProgress (2): 233 kB | 172/239 kBProgress (2): 233 kB | 176/239 kBProgress (2): 233 kB | 180/239 kBProgress (2): 233 kB | 184/239 kBProgress (2): 233 kB | 188/239 kBProgress (2): 233 kB | 193/239 kBProgress (2): 233 kB | 197/239 kBProgress (2): 233 kB | 201/239 kBProgress (2): 233 kB | 205/239 kBProgress (2): 233 kB | 209/239 kBProgress (2): 233 kB | 213/239 kBProgress (2): 233 kB | 217/239 kBProgress (2): 233 kB | 221/239 kBProgress (2): 233 kB | 225/239 kBProgress (2): 233 kB | 229/239 kBProgress (2): 233 kB | 233/239 kBProgress (2): 233 kB | 238/239 kBProgress (2): 233 kB | 239 kB                                 Downloaded from central: https://repo.maven.apache.org/maven2/commons-codec/commons-codec/1.6/commons-codec-1.6.jar (233 kB at 5.2 MB/s)
+Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/3.0.15/plexus-utils-3.0.15.jar (239 kB at 5.4 MB/s)
+[[1;34mINFO[m] Installing /home/developer/Microservices/JavaProjectConfig/Apigetway/demo/target/demo-0.0.1-SNAPSHOT.jar to /home/developer/.m2/repository/com/apigateway/demo/0.0.1-SNAPSHOT/demo-0.0.1-SNAPSHOT.jar
+[[1;34mINFO[m] Installing /home/developer/Microservices/JavaProjectConfig/Apigetway/demo/pom.xml to /home/developer/.m2/repository/com/apigateway/demo/0.0.1-SNAPSHOT/demo-0.0.1-SNAPSHOT.pom
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] [1;32mBUILD SUCCESS[m
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] Total time:  33.034 s
+[[1;34mINFO[m] Finished at: 2024-02-11T16:21:42+05:30
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
