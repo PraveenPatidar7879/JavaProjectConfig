@@ -15,8 +15,8 @@ pipeline {
             steps {
                 // Run the build script
                 script {
-                    sh 'chmod +x run_microservices'
-                    sh './run_microservices'
+                    sh 'chmod +x run_microservices.sh'
+                    sh './run_microservices.sh'
                 }
             }
         }
